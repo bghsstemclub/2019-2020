@@ -1,0 +1,92 @@
+.box0 {
+    background-color: rgb(35, 74, 128);
+    font-size:36px;
+    text-align: center;
+    text-decoration: overline;
+    color: white;
+    height: 500px;
+    width: 100%;
+    /*parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    display: table;
+    background-size: cover;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column1{
+    float: left;
+    width: 66.6666%;
+    padding: 20px;
+    word-wrap: break-word;
+ /*   color: rgb(139, 255, 154);*/
+}
+
+
+.column2{
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 1000px) {
+    .column1,.column2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.box1 {
+    /*the background image*/
+    background-image: url("STEM Pictures/STEM2.jpg");
+    /*Set a height*/
+    height: 500px;
+    width: 100%;
+    /*parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    display: table;
+    background-size: cover;
+}
+
+
+.box2 {
+    /*the background image*/
+    background-image: url("STEM Pictures/STEM3.jpg");
+    /*Set a height*/
+    height: 500px;
+    width: 100%;
+    /*parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    display: table;
+    background-size: cover;
+ }
+ 
+ .box3 {
+    /*the background image*/
+    background-image: url("STEM Pictures/STEM4.jpg");
+    /*Set a height*/
+    height: 1000px;
+    width: 100%;
+    /*parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    display:table;
+    background-size: cover;
+ }
+

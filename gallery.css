@@ -1,0 +1,43 @@
+.row {
+    display:flex;
+    flex-wrap:wrap;
+    padding: 4px;
+}
+
+/* Characteristics of each columns */
+.column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 4px;
+}
+
+/* Images within each columns */
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive characteristics (changes the layout from four columns to two columns if the size of the browser window is 800px)*/
+@media screen and (max-width: 1200px) and (min-width: 800px){
+    .column {
+        flex: 24%;
+        max-width: 24%;
+    }
+}
+
+/* Responsive characteristics (changes the layout from four columns to two columns if the size of the browser window is 800px)*/
+@media screen and (max-width: 800px) and (min-width: 600px){
+    .column {
+        flex: 48%;
+        max-width: 48%;
+    }
+}
+
+/* Responsive characteristics (changes the layout from two columns to one columns if the size of the browser window is 600px)*/
+@media screen and (max-width: 600px){
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,65 @@
+/*the menu bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  /*the list in the menu*/
+  li {
+    float: left;
+  }
+  
+  /* the list with dropdown button */
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /*The list with dropdown button when hover over*/
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(79, 79, 151);
+  }
+  
+  /*the container*/
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  /* How will the dropdown content looks like*/
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /*color change of dropdown button when hover over*/
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /*show the dropdown menu when hover over*/
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+
+  /*change the background color of the dropdown button*/
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /*Color up when it is the current link/button*/
+  li a.active {
+    background-color: rgb(79, 79, 151);
+    color: white;
+  }
