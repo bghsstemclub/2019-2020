@@ -37,11 +37,11 @@
 
 .column2{
     float: left;
-    width: 43.33333%;
+    width: 43.33333%;    
     padding: 10px;
     word-wrap: break-word;
     font-size:36px;
-    text-align: center;
+    text-align: left;
     color: white;
 }
 
