@@ -1,67 +1,84 @@
-/*the menu bar*/
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.header {
     overflow: hidden;
-    background-color: #333;
-    /*position: sticky;
-    top: 0px;*/
-  }
+    padding: 0 px;
+    position: relative;
+}
 
-  /*the list in the menu*/
-  li {
-    float: left;
-  }
+.header-right{
+    float: right;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+} 
+
+.navbar {
+    overflow: hidden;
+    background-color: rgba(143, 185, 190, 0.301);  
+    border-radius: 10px;
+
+}
   
-  /* the list with dropdown button */
-  li a, .dropbtn {
-    display: inline-block;
+  .navbar a {
+    float: left;
+    font-size: 20px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 10px;
+
   }
   
-  /*The list with dropdown button when hover over*/
-  li a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(79, 79, 151);
+  .dropdown {
+    float: left;
+    overflow: hidden;
   }
   
-  /*the container*/
-  li.dropdown {
-    display: inline-block;
+  .dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-radius: 10px;
+
   }
   
-  /* How will the dropdown content looks like*/
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(161, 200, 255);
+  }
+  
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-
-  /*color change of dropdown button when hover over*/
+  
   .dropdown-content a {
+    float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
   }
-
-  /*show the dropdown menu when hover over*/
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-
-  /*change the background color of the dropdown button*/
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
   .dropdown:hover .dropdown-content {
     display: block;
   }
 
-  /*Color up when it is the current link/button*/
-  li a.active {
+  a.active {
     background-color: rgb(79, 79, 151);
     color: white;
+    border-radius: 10px;
   }
