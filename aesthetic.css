@@ -7,23 +7,39 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-
+  .header_picture {
+    filter: blur(2.3px) brightness(90%);
+  }
 
   .center {
     position: absolute;
-    top: 30%;
-    left:60%;
-    right:40%;
-    bottom: 70%;
-    font-size: 80px;
+    top: 0.3%;
+    left: 3.2%;
+    font-size: 100px;
     font-family: monospace;
-    color: rgb(161, 200, 255);
+    color: rgb(255, 255, 255);
+  }
+
+  .center2 {
+    position: absolute;
+    top: 37%;
+    left: 5.5%;
+    font-size: 70px;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+  }
+
+  .vertical_line {
+    border-left: 4px solid rgba(130, 236, 255, 0.925);
+    height: 60px;
+    position: absolute;
+    top: 40%;
+    left: 3.5%;
   }
 
   img {
     width: 100%;
     height: auto;
-    opacity: 1;
   }
 
   /*image size for "WHAT WE DO"*/
