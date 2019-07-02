@@ -7,7 +7,7 @@
 .header-right{
     float: right;
     position: absolute;
-    top: 8px;
+    top: 20px;
     right: 16px;
 } 
 
@@ -78,7 +78,7 @@
   }
 
   a.active {
-    background-color: rgb(79, 79, 151);
+    background-color: rgb(39, 146, 233);
     color: white;
     border-radius: 10px;
   }
