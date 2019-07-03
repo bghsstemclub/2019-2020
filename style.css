@@ -1,84 +1,90 @@
+/* Position for the menu*/
 .header {
-    overflow: hidden;
-    padding: 0 px;
-    position: relative;
+  overflow: hidden;
+  padding: 0 px;
+  position: relative;
 }
 
 .header-right{
-    float: right;
-    position: absolute;
-    top: 20px;
-    right: 16px;
+  float: right;
+  position: absolute;
+  top: 20px;
+  right: 16px;
 } 
 
-.navbar {
-    overflow: hidden;
-    background-color: rgba(143, 185, 190, 0.301);  
-    border-radius: 10px;
-
+/*the menu style*/
+.menu {
+  overflow: hidden;
+  background-color: rgba(143, 185, 190, 0.301);  
+  border-radius: 10px;
 }
   
-  .navbar a {
-    float: left;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-radius: 10px;
+.menu a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 10px;
+}
 
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 20px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    border-radius: 10px;
+/*vertical Menu; applied for "history" and "activities" sections*/
+.vertical_menu {
+  float: left;
+  overflow: hidden;
+}
 
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(161, 200, 255);
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 120px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+/*styles for containers of the vertical_menu*/
+.vertical_menu .vertical_menu_button {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  border-radius: 10px;
+}
 
-  a.active {
-    background-color: rgb(39, 146, 233);
-    color: white;
-    border-radius: 10px;
-  }
+/*specific details for the vertical_menu*/
+.vertical_menu-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9b6;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/*details for each sections of the menu*/
+.vertical_menu-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/*vertical menu hovering effects*/
+.menu a:hover, .vertical_menu:hover .vertical_menu_button {
+  background-color: rgb(161, 200, 255);
+}
+  
+.vertical_menu-content a:hover {
+  background-color: #ddd;
+}
+  
+.vertical_menu:hover .vertical_menu-content {
+  display: block;
+}
+
+/*identify the current link/page*/
+a.active {
+  background-color: rgb(39, 146, 233);
+  color: white;
+  border-radius: 10px;
+}
