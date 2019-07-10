@@ -1,5 +1,36 @@
 
 
 .achievements {
-  margin-left: 40px;
+  padding: 30px 40px;
+
+  font-family: Arial, sans-serif;
+
+  background-image:linear-gradient(to bottom right,
+     rgb(103, 222, 226),rgb(39, 146, 233));
+}
+.achievements h2 {
+  font-size: 300%;
+  text-align: center;
+  color: white;
+}
+
+.achievements .featured p{
+  color: white;
+  font-size: 150%;
+  line-height: 25px;
+  text-indent: 5%;
+  margin-top: 5px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Times New Roman", serif;
+
+}
+
+.achievements img {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
 }
