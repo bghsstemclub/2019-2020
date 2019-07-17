@@ -8,22 +8,23 @@
   font-size: 300%;
   text-align: center;
   color: black;
-  border-width: 0px 0px 10px 0px;
-  border-style: solid;
-  border-color: black;
-  padding-bottom: 40px;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 .achievements h2 {
   margin-bottom: 100px;
+  border-width: 0px 0px 10px 0px;
+  border-style: solid;
+  border-color: rgb(37, 158, 206);
+  padding-bottom: 40px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .achievements h3{
 
-  font-size: 200%;
-  max-width: 300px;
+  font-size: 180%;
+  margin-bottom: 20px;
 }
 .achievements .featured p{
   color: black;
@@ -57,7 +58,7 @@
   transition: 1s ease;
   opacity: 0;
   position: absolute;
-  bottom: 0;
+  bottom:4px;
   left:0;
   margin-left: 0px;
   margin-right: -6px;
