@@ -38,36 +38,58 @@ body{
   left: 3.5%;
 }
 
+img{
+  height: auto;
+  width: 100%;
+}
+
 /*responsive images*/
-img {
+.img_within{
+  display:block;
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 /*image size for "WHAT WE DO"*/
 .img_size {
-  width: 500px;
-  height: 140x;
-  padding: 0px 3px;
-  border-radius: 20px;
   position: relative;
   width: 100%;
+  margin: 8px;
 }
 
 /*fade aspects*/
 .fade {
   position: absolute;
+  padding: 3px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  transition: .5s ease;
   height: 100%;
   width:100%;
   opacity: 0;
-  background-color: rgb(51, 179, 151);
+  border-radius: 10px;
+  transition: -5s ease;
+  background-color: rgba(51, 179, 151, 0.5);
 }
 
+.fade2{
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(51, 179, 151);
+  background: rgba(51, 179, 151, 0.5);
+  color: rgb(255,255,255);
+  width: 100%;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  transition: -5s ease;
+  border-radius: 10px;
+
+}
 /*headers for those fade pictures*/
 .center3 {
   color: white;
@@ -82,7 +104,11 @@ img {
 }
 
 /*hover effects for the fade pictures*/
-.img_size:hover .fade {
-  opacity: 0.8;
+.img_size:hover .fade{
+  opacity: 1;
+}
+
+.img_size:hover .fade2{
+  opacity: 1;
 }
   /*end of fade aspect*/
