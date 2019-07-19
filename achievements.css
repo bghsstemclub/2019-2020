@@ -16,7 +16,7 @@
   border-style: solid;
   border-color: rgb(37, 158, 206);
   padding-bottom: 40px;
-  max-width: 750px;
+  max-width: 1450px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -25,6 +25,7 @@
 
   font-size: 180%;
   margin-bottom: 20px;
+  margin-top: 100px;
 }
 .achievements .featured p{
   color: black;
@@ -77,5 +78,45 @@
 .img_text:hover {
   opacity: .85;
   transition: 1s ease;
+}
 
+.moreinfo {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(7, 160, 221);
+  position: absolute;
+  left: 41%;
+  border-radius: 10px;
+}
+.moreinfo:hover{
+    background-color: rgb(48, 201, 212);
+}
+
+.columnl {
+  float: left;
+  clear: left;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+}
+
+.columnr{
+  float: right;
+  clear: right;
+  overflow: visible;
+}
+
+.clear{
+  clear: both;
+}
+.column{
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
 }
