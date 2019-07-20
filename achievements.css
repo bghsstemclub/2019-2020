@@ -1,21 +1,46 @@
 
 
 .achievements {
-  padding: 30px 40px;
-
+  padding: 30px;
   font-family: Arial, sans-serif;
-
-  background-image:linear-gradient(to bottom right,
-     rgb(103, 222, 226),rgb(39, 146, 233));
 }
-.achievements h2 {
+
+.achievements h2, h3{
   font-size: 300%;
   text-align: center;
-  color: white;
+  color: black;
+
+}
+.achievements h2 {
+  margin-bottom: 100px;
+  border-width: 0px 0px 10px 0px;
+  border-style: solid;
+  border-color: rgb(37, 158, 206);
+  padding-bottom: 40px;
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.achievements h3{
+
+  font-size: 180%;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.achievements .featured {
+  border: black 5px;
+  padding: 0px 20px;
+  max-width: 1500px;
+  margin: 0px auto;
+  border-style: solid;
+  background-image:linear-gradient(to bottom left, rgb(103, 222, 226),rgb(39, 146, 233));
+}
+
+
 .achievements .featured p{
-  color: white;
+  color: black;
   font-size: 150%;
   line-height: 25px;
   text-indent: 5%;
@@ -28,9 +53,83 @@
 }
 
 .achievements img {
+
+
+  border-radius: 30px;
+  border-style:  solid;
+}
+
+.img_fade {
+  position: relative;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  display: block;
 
+
+}
+
+.img_text{
+  transition: 1s ease;
+  opacity: 0;
+  position: absolute;
+  bottom:4px;
+  left:0;
+  margin-left: 0px;
+  margin-right: -6px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 5px 30px;
+  color: white;
+  font-size: calc(100% + 1vmin);
+  text-indent: 5%;
+  background-color: rgb(51, 179, 151);
+  border-radius: 30px;
+
+
+}
+
+.img_text:hover {
+  opacity: .85;
+  transition: 1s ease;
+}
+
+.moreinfo {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(7, 160, 221);
+  position: absolute;
+  left: 40%;
+  border-radius: 10px;
+}
+.moreinfo:hover{
+    background-color: rgb(48, 201, 212);
+}
+
+.columnl {
+  float: left;
+  clear: left;
+}
+
+.columnr{
+  float: right;
+  clear: right;
+
+}
+
+.columnc{
+  padding-top: 20px;
+  text-align: center;
+  clear: both;
+}
+
+.clear{
+  clear: both;
+}
+.column{
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
 }
