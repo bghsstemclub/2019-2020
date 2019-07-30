@@ -10,7 +10,7 @@
 
 .main {
 
-  margin: 50px;
+  margin: 80px;
   height: 100000px;
   margin-right: 40px;
 }
@@ -27,12 +27,15 @@
 .main h3{
   font-size: 200%;
   font-family: Futurabold;
+  margin-top: 50px;
+  margin-bottom: 20px;
 
 }
 .main p {
   text-indent: 5%;
   font-size: 150%;
   font-family: Futurabook;
+  margin-top: 0px;
 
 }
 
@@ -43,6 +46,7 @@
   top: 25px;
   width: 100px;
   float: right;
+  margin-top: 10px;
 }
 .text {
   margin-right: 180px;
@@ -51,4 +55,10 @@
 .sidebar ul {
   list-style-type: none;
   display: inline;
+}
+
+
+.jumpmargin {
+  padding-top: 50px;
+  margin-top: -50px;
 }
