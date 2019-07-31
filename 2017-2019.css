@@ -3,9 +3,15 @@
   font-family: Futurabook;
   src: url("fonts/Futura Book font.ttf") format("truetype");
 }
+
 @font-face {
   font-family: Futurabold;
   src: url("fonts/Futura Extra Black font.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: FuturaXBlk;
+  src: url("fonts/Futura XBlk BT.ttf");
 }
 
 .main {
@@ -32,7 +38,7 @@
 
 }
 .main p {
-  text-indent: 5%;
+  text-indent: 8%;
   font-size: 150%;
   font-family: Futurabook;
   margin-top: 0px;
@@ -41,24 +47,42 @@
 
 .sidebar {
   background-color: rgb(218, 228, 230);
-  padding: 25px;
+  padding: 10px 32px;
   position: sticky;
   top: 25px;
   width: 100px;
   float: right;
   margin-top: 10px;
+  border-radius: 10px;
+  font-family: FuturaXBlk;
+  line-height: 25px;
+  text-align: center;
+
 }
+
 .text {
-  margin-right: 180px;
+  margin-right: 200px;
 }
 
 .sidebar ul {
   list-style-type: none;
   display: inline;
+  text-indent: -9px;
 }
 
 
 .jumpmargin {
   padding-top: 50px;
   margin-top: -50px;
+}
+
+.sidebar a:hover {
+  background-color: rgb(107, 128, 208);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.sidebar a {
+  color: rgb(24, 50, 224);
+  text-decoration: none;
 }
