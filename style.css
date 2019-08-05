@@ -1,65 +1,90 @@
-/*the menu bar*/
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
+/* Position for the menu*/
+.header {
+  overflow: hidden;
+  padding: 0 px;
+  position: relative;
+}
 
-  /*the list in the menu*/
-  li {
-    float: left;
-  }
+.header-right{
+  float: right;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+} 
+
+/*the menu style*/
+.menu {
+  overflow: hidden;
+  background-color: rgba(143, 185, 190, 0.301);  
+  border-radius: 10px;
+}
   
-  /* the list with dropdown button */
-  li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+.menu a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+/*vertical Menu; applied for "history" and "activities" sections*/
+.vertical_menu {
+  float: left;
+  overflow: hidden;
+}
+
+/*styles for containers of the vertical_menu*/
+.vertical_menu .vertical_menu_button {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  border-radius: 10px;
+}
+
+/*specific details for the vertical_menu*/
+.vertical_menu-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9b6;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/*details for each sections of the menu*/
+.vertical_menu-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/*vertical menu hovering effects*/
+.menu a:hover, .vertical_menu:hover .vertical_menu_button {
+  background-color: rgb(161, 200, 255);
+}
   
-  /*The list with dropdown button when hover over*/
-  li a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(79, 79, 151);
-  }
+.vertical_menu-content a:hover {
+  background-color: #ddd;
+}
   
-  /*the container*/
-  li.dropdown {
-    display: inline-block;
-  }
-  
-  /* How will the dropdown content looks like*/
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
+.vertical_menu:hover .vertical_menu-content {
+  display: block;
+}
 
-  /*color change of dropdown button when hover over*/
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  /*show the dropdown menu when hover over*/
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-
-  /*change the background color of the dropdown button*/
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  /*Color up when it is the current link/button*/
-  li a.active {
-    background-color: rgb(79, 79, 151);
-    color: white;
-  }
+/*identify the current link/page*/
+a.active {
+  background-color: rgb(39, 146, 233);
+  color: white;
+  border-radius: 10px;
+}

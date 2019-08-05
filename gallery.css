@@ -1,43 +1,75 @@
-.row {
-    display:flex;
-    flex-wrap:wrap;
-    padding: 4px;
+/*Parallax-Layout for box0*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-/* Characteristics of each columns */
-.column {
-    flex: 24%;
-    max-width: 24%;
-    padding: 4px;
+* {
+    box-sizing: border-box;
 }
 
-/* Images within each columns */
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+.column1{
+    float: left;
+    padding: 10px 5px;
+    word-wrap: break-word;
+    font-size:36px;
+    text-align: center;
+    color: white;
+ /*   color: rgb(139, 255, 154);*/
 }
 
-/* Responsive characteristics (changes the layout from four columns to two columns if the size of the browser window is 800px)*/
-@media screen and (max-width: 1200px) and (min-width: 800px){
-    .column {
-        flex: 24%;
-        max-width: 24%;
-    }
+
+.column2{
+    float: left;   
+    padding: 10px 5px;
+    word-wrap: break-word;
+    font-size:36px;
+    text-align: left;
+    color: white;
 }
 
-/* Responsive characteristics (changes the layout from four columns to two columns if the size of the browser window is 800px)*/
-@media screen and (max-width: 800px) and (min-width: 600px){
-    .column {
-        flex: 48%;
-        max-width: 48%;
-    }
+.column3{
+    width: 7%;
+    float: left;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+
+.header_gallery {
+    text-align: center;
+    padding: 100px 30px 30px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.line {
+    border: 6px solid rgb(37, 158, 206);
+    width: 85%;
+}
+
+.buttonPosition {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(7, 160, 221);
+    position: absolute;
+    left: 45%;
+    border-radius: 10px;
+}
+
+.buttonPosition:hover{
+    background-color: rgb(48, 201, 212);
 }
 
 /* Responsive characteristics (changes the layout from two columns to one columns if the size of the browser window is 600px)*/
-@media screen and (max-width: 600px){
-    .column {
-        flex: 100%;
-        max-width: 100%;
+@media screen and (max-width: 1000 px){
+    .column1,.column2{
+        width: 100%;
+        text-align: center;
     }
 }
+  

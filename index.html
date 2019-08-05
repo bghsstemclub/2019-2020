@@ -7,73 +7,129 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="aesthetic.css">
   <link rel="stylesheet" href="parallax.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
+  <!--Menu Section-->
   <div class="header">
-    <img src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture" width:"600" height="300"> 
-    <div class="center">STEM Club</div>
+    <img class="header_picture"src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture"> 
+    <div class="header-right">
+      <div class="menu">
+        <a class="active" href="index.html">Home</a>
+        <a href="achievements.html">Achievements</a>
+        <div class="vertical_menu">
+          <button class="vertical_menu_button">History</button>
+          <div class="vertical_menu-content">
+            <a href="alumni.html">Alumni</a>
+            <a href="2018-2019.html">2018-2019</a>
+            <a href="2017-2018.html">2017-2018</a>
+            <a href="2016-2017.html">2016-2017</a>
+          </div>
+        </div> 
+        <a href="gallery.html">Gallery</a>
+        <a href="code B.html">Code B</a>
+        <div class="vertical_menu">
+          <button class="vertical_menu_button">Activities</button>
+          <div class="vertical_menu-content">
+            <a href="icebreakers.html">Ice Breakers</a>
+            <a href="game-designs.html">Game Designs</a>
+            <a href="3D-designs.html">3D Designs</a>
+          </div>
+        </div> 
+      </div>   
+    </div>
+    <div class="vertical_line"></div>
+    <div class="center2"><b>Home</b></div>
+    <div class="center"><img style="width:250px" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo"></div>
   </div>
+  <!--End of Menu section-->
 
-  <ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="achievements.html">Achievements</a></li>
-    <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">History</a>
-      <div class="dropdown-content">
-        <a href="2018-2019.html">2018-2019</a>
-        <a href="2017-2018.html">2017-2018</a>
-        <a href="2016-2017.html">2016-2017</a>
-      </div>
-    </li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">Activities</a>
-      <div class="dropdown-content">
-        <a href="icebreakers.html">Icebreakers</a>
-        <a href="game-designs.html">Game Designs</a>
-        <a href="3D-designs.html">3D Designs</a>
-      </div>
-    </li>
-  </ul>
-  <div class="box0">
+  <!--Rolling effect-->
+  <!--boxes for info with fixed position-->
+  <div class="box0" style="background-image: linear-gradient(to bottom right, rgb(103, 222, 226),rgb(39, 146, 233));">
     <div class="row">
-      <div class="column2">
-        <h1 style="text-decoration: overline;"><b>OUR VISION</b></h1>
+      <div class="column2" style="padding: 140px 50px;">
+          <h1><b>OUR VISION</b></h1>
       </div>
-      <div class="column1">
-        <p>To provide a challenging learning environment in Science, Technology, Engineering, and Math,
-        which maximizes individual potential and ensures students are well-prepared to meet the challenges 
-        in the world around them</p>
+      <div class="column1" style="padding: 70px 50px;">
+          <p>To provide a challenging learning environment in Science, Technology, Engineering, and Math,
+          which maximizes individual potential and ensures students are well-prepared to meet the challenges 
+          in the world around them</p>
       </div>
     </div>
   </div>
 
+  <!--first picture-->
   <div class="box1"></div>
 
-  <div class="box0">
+  <!--2nd info box with 3 images that have hyperlinks-->
+  <div class="box0" style="background-image: linear-gradient(to bottom left, rgb(103, 222, 226),rgb(39, 146, 233));">
     <div class="row">
       <div class="column1">
-          <p>  </p>
+        <div class="img_size">
+          <img class="img_within" src="STEM Pictures/icebreakers.png" alt="icebreakers">       
+          <a href="icebreakers.html">                
+            <div class="fade">
+              <div class="center3">Icebreakers</div>
+            </div>
+          </a>
+        </div>
+    
+        <div class="img_size">
+          <img class="img_within" src="STEM Pictures/game-designs.JPG" alt="game-designs">
+          <a href="game-designs.html">
+            <div class="fade">
+              <div class="center3">Game Designs</div>
+            </div>
+          </a>
+        </div>
+    
+        <div class="img_size">
+          <img class="img_within" src="STEM Pictures/3d-designs.jpg" alt="3D-designs">
+          <a href="3D-designs.html">
+            <div class="fade">
+              <div class="center3">3D-Designs</div>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="column2">
-        <h1 style="text-decoration: overline;"><b>WHAT WE DO</b></h1>
+      <h1><b>WHAT WE DO</b></h1>
       </div>
     </div>
   </div>
 
+  <!--2nd Picture-->
   <div class="box2"></div>
 
-  <div class="box0">
+  <!--box consists of an image with hyperlink-->
+  <div class="box0" style="background-image: linear-gradient(to bottom right, rgb(103, 222, 226),rgb(39, 146, 233));">
     <div class="row">
-      <div class="column2">
-        <h1 style="text-decoration: overline; font-size: 64px"><b>BIGGER ASSOCIATION</b></h1>
+      <div class="column2" style="padding: 20px 50px;">
+        <h1 style="font-size: 64px"><b>BIGGER ASSOCIATION</b></h1>
       </div>
       <div class="column1">
+        <div class="column2">
+          <img style="height: 230px" src="STEM Pictures/Samueli.JPG" alt="Samueli">
+          <img style="height: 250px" src="STEM Pictures/Sideline.JPG" alt="Sideline">
+        </div>
+        <div class="column1">
+          <img src="STEM Pictures/MESA.JPG" alt="MESA">
+          <div class="img_size">
+            <img class="img_within" src="STEM Pictures/Code B.jpg" alt="game-designs">
+            <a href="code B.html">
+              <div class="fade">
+                <div class="center3">Code B</div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
+  <!--3rd picture-->
   <div class="box3"></div>
 </body>
 </html>
