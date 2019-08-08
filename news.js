@@ -5,7 +5,7 @@ var slide = []
 slide[0] = 'STEM Pictures/STEM4.jpg';
 slide[1] = 'STEM Pictures/Achievements/Achievement1.jpg';
 slide[2] = 'STEM Pictures/Achievements/Achievement2.jpg';
-slide[3] = 'STEM Pictures/Achievements/Achievement3.JPG';
+slide[3] = 'STEM Pictures/Achievements/Achievement3.JPG'; 
 
 //function to change slide
 function changeSlides(){
