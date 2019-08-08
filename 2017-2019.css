@@ -98,7 +98,7 @@
 
 .officer {
     max-width: 300px;
-    margin: 50px;
+    margin: 40px;
 }
 
 .officer h3 {
@@ -107,6 +107,7 @@
 
 .column p {
     font-size: 2.2vmin;
+    padding: 10px;
 }
 
 .border {
