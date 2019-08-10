@@ -54,6 +54,8 @@
     margin-top: 20px;
     float: right;
     border-radius: 6px;
+    position: sticky;
+    top: 10px;
 }
 
 .column_news1, .column_calendars{
