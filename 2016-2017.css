@@ -2,6 +2,27 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: linear-gradient(to bottom left, rgb(38, 139, 197),rgb(39, 146, 233));
+}
+
+/*content box in the middle*/
+.content {
+    max-width: 80%;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*header picture*/
+.img_header{
+    padding-left: 8%;
+    padding-right: 8%;
+    position: relative; 
+    z-index: 1;
+}
+
 /*Crops any picture under the crop class*/
 .crop_section{
     width: 100%;
@@ -22,21 +43,13 @@
 }
 
 .column_box{
-    float: left;
-    word-wrap: break-word;
-    text-align: center;
-    padding: 20px;
-    font-size: 25px;
-    opacity: 1;
-    color: black;
-    text-decoration: none;
     margin-right: 3%;
     margin-left: 3%;
     width: 15%;
     background: white;
+    font-size: 25px;
 }
-
-.column_officer{
+.column_box, .column_officer, .column_event1, .column_event2{
     float: left;
     word-wrap: break-word;
     text-align: center;
@@ -44,19 +57,26 @@
     opacity: 1;
     color: black;
     text-decoration: none;
-    margin-right: 3%;
-    margin-left: 3%;
-    width: 22%;
+}
+
+.column_officer{
+    width: 28%;
+}
+
+.column_event1{
+    width: 40%;
+}
+.column_event2{
+    width: 44%;
 }
 
 /*adding extra space*/
 .column_side{
-    width: 8%;
     float: left;
-    opacity: 1;
     word-wrap: break-word;
     padding: 10px;
     background: white;
+    width: 8%;
 }
 
 /*line*/
@@ -68,17 +88,36 @@ hr{
 h2{
     text-align: center;
     font-size: 30px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 h5{
     font-size: 22px;
     padding: 0px;
+    font-family: 'Segoe UI', Geneva, sans-serif;
 }
 
 h6{
     font-size: 18px;
     padding: 0px;
     margin: 0px;
+    font-family: Verdana, Geneva, sans-serif;
+
+}
+
+p {
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 110%;
+    font-family: Helvetica, sans-serif;
+    padding: 0px;
+}
+
+ul{
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 100%;
+    font-family: Helvetica, sans-serif
 }
 
 /*hovering effect*/
