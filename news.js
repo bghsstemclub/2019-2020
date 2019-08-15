@@ -1,5 +1,5 @@
 var i = 0;
-var slide = []
+var slide = [];
 
 //slide list
 slide[0] = 'STEM Pictures/STEM4.jpg';
