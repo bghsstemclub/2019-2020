@@ -13,10 +13,17 @@
     src: url("fonts/Futura XBlk BT.ttf");
 }
 
-.main {
+@font-face  {
+    font-family: Futuramed;
+    src: url("fonts/futura Heavy font.ttf");
+}
 
+body {
+    background-image: linear-gradient(to bottom right, rgb(103, 222, 226),rgb(39, 146, 233));
+}
+
+.main {
     margin: 80px;
-    height: 100000px;
     margin-right: 40px;
 }
 
@@ -37,13 +44,19 @@
 
 }
 
+.main h4 {
+    font-size: 150%;
+    font-family: Futuramed;
+}
+
 .main p {
     text-indent: 8%;
     font-size: 150%;
     font-family: Futurabook;
     margin-top: 0px;
-
 }
+
+
 
 .sidebar {
     background-color: rgb(218, 228, 230);
@@ -62,6 +75,8 @@
 
 .text {
     margin-right: 200px;
+    background-color: white;
+    padding: 50px;
 }
 
 .sidebar ul {
@@ -87,11 +102,36 @@
     text-decoration: none;
 }
 
+
+.img_text {
+    max-width: 500px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.img_text p {
+    position: absolute;
+    top: 92%;
+    left: 0px;
+    width: 500px;
+    text-align: center;
+    background-color: #70c8fe;
+    text-indent: 0;
+}
+
+.achievements ul {
+    font-size: 150%;
+    font-family: Futurabook;
+}
+
+
+
+
 .column {
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    border: solid rgb(107, 128, 208) 10px;
+    border: solid rgb(39, 146, 233) 10px;
     flex-wrap: wrap;
     border-radius: 15px;
 }
@@ -99,6 +139,11 @@
 .officer {
     max-width: 300px;
     margin: 40px;
+    
+}
+.officer img{
+
+    height: 290px;
 }
 
 .officer h3 {
@@ -112,4 +157,7 @@
 
 .border {
     border: solid black 5px;
+    height: calc(150px + 45vh);
+    min-height: 350px;
 }
+
