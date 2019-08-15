@@ -1,15 +1,55 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-p{
-  border: 7px solid black;
-  margin: 10px
+body {
+    background-image: linear-gradient(to bottom right, rgb(103, 222, 226),rgb(39, 146, 233));
 }
-img{
-border:5px solid black;
-margin:10px
+.main {
+    margin: 80px;
+    background-color: white;
+    padding: 50px;
 }
-</style>
-</head>
-</html>
+.main img {
+    max-height: 300px;
+
+}
+.main p {
+    text-indent: 5%;
+    font-size: 100%
+}
+
+.main h2 {
+    font-size: 200%
+}
+
+.main h3 {
+    font-size: 150%;
+}
+
+.column {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+.column h3 {
+    text-align: center;
+}
+
+.developer {
+    max-width: 300px;
+}
+
+.border {
+    border: solid black 5px;
+}
+
+.examples {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.games {
+    max-width: 350px;
+    margin: 10px;
+}
