@@ -13,6 +13,40 @@
 </head>
 <body>
   <!--Menu Section-->
+    
+  <!--Side Menu-->
+  <!--adding javascript-->
+  <script src="sideMenu.js"></script>
+      
+  <!--similar concept as the main menu-->
+  <div id="side_menu_id" class="side_menu">
+    <!--application of js-->
+    <a class="close_button" onclick="closeButton()">
+      <span style='font-size:100%'>&#10006;</span>
+    </a>
+    <a class="side_menu_link" href="index.html">Home</a>
+    <a class="side_menu_link" href="achievements.html">Achievements</a>
+    <div class="extra_menu">
+      <a onclick="showingExtraMenu1()" class="extra_menu_button">History</a>
+      <div id="extra_menu_id1" class="extra_menu_content">
+        <a class="extra_menu_link" href="alumni.html">Alumni</a>
+        <a class="extra_menu_link" href="2018-2019.html">2018-2019</a>
+        <a class="extra_menu_link active" href="2017-2018.html">2017-2018</a>
+        <a class="extra_menu_link" href="2016-2017.html">2016-2017</a>
+      </div>      
+    </div>
+    <a class="side_menu_link" href="news.html">News</a>
+    <a class="side_menu_link" href="gallery.html">Gallery</a>
+    <a class="side_menu_link" href="code B.html">Code B</a>
+    <div class="extra_menu">
+      <a onclick="showingExtraMenu2()" class="extra_menu_button">Activities</a>
+      <div id="extra_menu_id2" class="extra_menu_content">
+        <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
+      </div>      
+    </div>
+  </div>
+  
+  <!--Normal Menu-->
   <div class="header">
     <img class="header_picture"src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture">
     <div class="header-right">
@@ -42,9 +76,14 @@
         </div>
       </div>
     </div>
+    <div class="open_button" onclick="openButton()">
+      <div></div>  
+      <div></div>  
+      <div></div>  
+    </div>
     <div class="vertical_line"></div>
     <div class="center2"><b>2017-2018</b></div>
-    <div class="center"><img style="width:250px" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo"></div>
+    <img class="center" style="width: 250px" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo">
   </div>
   <!--End of Menu section-->
 
