@@ -157,7 +157,7 @@ body {
 
 .border {
     border: solid black 5px;
-    height: calc(150px + 45vh);
+    height: calc(180px + 43vh);
     min-height: 350px;
 }
 
