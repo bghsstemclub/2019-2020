@@ -1,0 +1,89 @@
+/*Rows and Columns Section*/
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column_box1{
+    flex: 34%;
+}
+.column_box1, .column_web, .column_box2, .column_event1, .column_event2, .column_side1{
+    float: left;
+    word-wrap: break-word;
+    padding: 20px;
+    opacity: 1;
+    color: black;
+    text-decoration: none;
+}
+
+.column_box2{
+    flex: 50%;
+}
+
+.column_web{
+    flex: 36%;
+    margin: 2%;
+}
+
+.column_event1{
+    flex: 40%;
+}
+.column_event2{
+    flex: 44%;
+}
+
+.column_pictures{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column_pictures img{
+    margin-top: 6px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/*adding extra space*/
+.column_side1{
+    flex: 2%;
+}
+
+h1, ul, p, .introduction_title{
+    font-family: Helvetica, sans-serif;
+    font-size: 500%;
+    color: rgb(65, 65, 65);
+}
+
+h1{
+    text-align: center;
+}
+ul, p{
+    font-size: 120%;
+}
+
+.introduction_title{
+    font-size: 220%;
+    color: white;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns and one instead of two*/
+@media screen and (max-width: 800px) {
+    .column_pictures {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column_pictures {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+  

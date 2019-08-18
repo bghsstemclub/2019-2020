@@ -13,6 +13,40 @@
 
 <body>
     <!--Menu Section-->
+    
+    <!--Side Menu-->
+    <!--adding javascript-->
+    <script src="sideMenu.js"></script>
+      
+    <!--similar concept as the main menu-->
+    <div id="side_menu_id" class="side_menu">
+        <!--application of js-->
+        <a class="close_button" onclick="closeButton()">
+            <span style='font-size:100%'>&#10006;</span>
+        </a>
+        <a class="side_menu_link" href="index.html">Home</a>
+        <a class="side_menu_link" href="achievements.html">Achievements</a>
+        <div class="extra_menu">
+            <a onclick="showingExtraMenu1()" class="extra_menu_button">History</a>
+            <div id="extra_menu_id1" class="extra_menu_content">
+                <a class="extra_menu_link" href="alumni.html">Alumni</a>
+                <a class="extra_menu_link" href="2018-2019.html">2018-2019</a>
+                <a class="extra_menu_link" href="2017-2018.html">2017-2018</a>
+                <a class="extra_menu_link" href="2016-2017.html">2016-2017</a>
+            </div>      
+        </div>
+        <a class="side_menu_link active" href="news.html">News</a>
+        <a class="side_menu_link" href="gallery.html">Gallery</a>
+        <a class="side_menu_link" href="code B.html">Code B</a>
+        <div class="extra_menu">
+            <a onclick="showingExtraMenu2()" class="extra_menu_button">Activities</a>
+            <div id="extra_menu_id2" class="extra_menu_content">
+                <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
+            </div>      
+        </div>
+    </div>
+  
+    <!--Normal Menu-->
     <div class="header">
         <img class="header_picture" src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture">
         <div class="header-right">
@@ -40,9 +74,14 @@
                 </div>
             </div>
         </div>
+        <div class="open_button" onclick="openButton()">
+            <div></div>  
+            <div></div>  
+            <div></div>  
+        </div>
         <div class="vertical_line"></div>
         <div class="center2"><b>News</b></div>
-        <div class="center"><img style="width:250px" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo"></div>
+        <img class="center" style="width:250px" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo">
     </div>
     <!--End of Menu section-->
 
@@ -52,8 +91,7 @@
     <div class="slideshow_container">
         <div class="crop">
             <img name="slideShow" alt="slideShow">
-            <div id="fade3">MESA NEDC Competition: 3rd Place(2018-2019 State)
-            <br>Huy Banh, Minh Duong, David Chuong, Khanh Nguyen</div>
+            <div id="fade3"></div>
         </div>
     </div>
     <!--End of Slide Show-->
@@ -74,8 +112,8 @@
             <div class="column_news2">
                 <p>
                     STEM Club is a gathering of students that meets regularly in a learning environment to work on inquiry-based Science, Technology, Engineering and Math related activities/projects.
-                    <br><br>STEM strives to offers students an opportunity to learn coding as well as developing critical thinking and collaboration skills - all with the goal to represent Bolsa Grande well
-                    at STEM-based competitions, as well as preparing the students to meet the challenges in the world around them.
+                    <br><br>STEM strives to offers students an opportunity to learn coding as well as to develop critical thinking and collaboration skills - all with the goal to represent Bolsa Grande well
+                    at STEM-based competitions and preparing the students to meet the challenges in the world around them.
                     <br><br>In the past years, STEM has placed top three in both State and National level for the MESA Engineering Design Competition.
                 </p>
                 <!--button link to home-->
@@ -92,7 +130,7 @@
         <div class="row">
             <!--News Column-->
             <div class="column_news2" style="width: 70%">
-                <a class="link_color" target="_blank" href="articles_holder.html">
+                <a class="link_color" href="Articles/articles_holder.html">
                     <h1 style="font-size: 50px">
                         Latest News
                     </h1>                    
@@ -106,7 +144,7 @@
                         <p style="font-size: 85%">
                             Congratulation to David Chuong, Huy Banh, Minh Duong, and Khanh for taking first place overall at the Regional Level in the MESA National Engineering Design Compeition. Their achievement has truly shown the commitment and dedication in developing and building a function electronic device created to solve authentic real-world problems. We are the STEMatador!
                         </p>
-                        <a href="article1.html" target="_blank">
+                        <a href="Articles/article1.html" target="_blank">
                             <!--Link to the First Article-->
                             <button class="button_news">
                                 read more >>
@@ -126,7 +164,7 @@
                             Congratulation to David Chuong, Huy Banh, Minh Duong, and Khanh for taking first place overall at the Regional Level in the MESA National Engineering Design Compeition. Their achievement has truly shown the commitment and dedication in developing and building a function electronic device created to solve authentic real-world problems. We are the STEMatador!
                         </p>
                         <!--Link to the Second Article -->
-                        <a href="article2.html" target="_blank">
+                        <a href="Articles/article2.html" target="_blank">
                             <button class="button_news">
                                 read more >>
                             </button>
