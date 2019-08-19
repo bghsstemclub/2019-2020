@@ -102,13 +102,3 @@ img{
   opacity: 1;
 }
   /*end of fade aspect*/
-
-@media screen and (max-width: 600 px){
-  .center3 {
-    font-size: 20px;
-  }
-
-  .fade2{
-    font-size: 10px;
-  }
-}
