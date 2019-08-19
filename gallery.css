@@ -9,7 +9,8 @@
     box-sizing: border-box;
 }
 
-.column1{
+/*Rows and Columns Section*/
+.column1a, .column2a, .column1b, .column2b, .column1c, .column2c, .column1d, .column2d, .columne{
     float: left;
     padding: 10px 5px;
     word-wrap: break-word;
@@ -19,14 +20,40 @@
  /*   color: rgb(139, 255, 154);*/
 }
 
+.column1a{
+    width: 52%;
+}
 
-.column2{
-    float: left;   
-    padding: 10px 5px;
-    word-wrap: break-word;
-    font-size:36px;
-    text-align: left;
-    color: white;
+.column2a{
+    width: 33%;
+}
+
+.column1b{
+    width: 36.25%;
+}
+
+.column2b{
+    width: 48.75%;
+}
+
+.column1c{
+    width: 52%;
+}
+
+.column2c{
+    width: 33%;
+}
+
+.column1d{
+    width: 33%;
+}
+
+.column2d{
+    width: 52%;
+}
+
+.columne{
+    width: 42.5%;
 }
 
 .column3{
@@ -66,10 +93,9 @@
 }
 
 /* Responsive characteristics (changes the layout from two columns to one columns if the size of the browser window is 600px)*/
-@media screen and (max-width: 1000 px){
-    .column1,.column2{
+@media screen and (max-width: 1000px){
+    .column1a, .column2a, .column1b, .column2b, .column1c, .column2c, .column1d, .column2d, .columne{
         width: 100%;
-        text-align: center;
     }
 }
   
