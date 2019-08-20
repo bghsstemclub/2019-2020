@@ -41,6 +41,12 @@
     color: black;
 }
 
+.title{
+    text-align: center; 
+    font-size: 300%; 
+    text-decoration: overline;
+}
+
 /*Rows and Columns Section*/
 .row:after {
     content: "";
@@ -152,9 +158,27 @@
 
     .column_calendars{
         width: 100%;
+        margin: 0;
     }
 
     .column_news_holder{
         width: 100%;
+    }
+
+    .title{
+        font-size: 200%;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .crop{
+        height: 200px;
+        margin-top: 0;
+    }
+
+    #fade3{
+        font-size: 13px;
+        padding: 10px;
     }
 }

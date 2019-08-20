@@ -77,12 +77,12 @@
 .side_menu{
   padding-top: 44px;
   position: fixed;
-  background-color: rgb(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.719);
   transition: 0.4s;
   top: 0;
   left: 0;
   overflow-x: hidden; /*Disabling side scroll*/
-  z-index: 1; /*staying on top*/
+  z-index: 3; /*staying on top*/
   width: 0; /*for js to work*/
   height: 100%;
 }
@@ -92,11 +92,6 @@
   position: relative;
   display: inline-block;
   width: 200px;
-}
-
-/*for js code*/
-.show {
-  display: block;
 }
 
 /*the link/tab in the side menu*/
@@ -178,6 +173,9 @@
   color: rgb(209, 209, 209);
 }
 
+.extra_menu:hover .extra_menu_content {
+  display: block;
+}
 /*normal menu hover effect*/
 .menu a:hover, .vertical_menu:hover .vertical_menu_button {
   background-color: rgb(161, 200, 255);
@@ -244,7 +242,7 @@ a.active {
     left: 50%;
     transform: translate(-50%, -30%);
     margin-left: 0;
-    font-size: 40px;
+    font-size: 37px;
   }
 
   .vertical_line{
