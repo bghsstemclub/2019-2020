@@ -1,52 +1,237 @@
+
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>
-    STEM Club 
-  </title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="aesthetic.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        STEM Club
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aesthetic.css">
+    <link rel="stylesheet" href="2017-2019.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 </head>
+
 <body>
-  <!--Menu Section-->
-  <div class="header">
-    <img class="header_picture"src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture"> 
-    <div class="header-right">
-      <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="achievements.html">Achievements</a>
-        <div class="vertical_menu">
-          <button class="vertical_menu_button">History</button>
-          <div class="vertical_menu-content">
-            <a href="alumni.html">Alumni</a>
-            <a class="active" href="2018-2019.html">2018-2019</a>
-            <a href="2017-2018.html">2017-2018</a>
-            <a href="2016-2017.html">2016-2017</a>
-          </div>
-        </div> 
-        <a href="gallery.html">Gallery</a>
-        <a href="code B.html">Code B</a>
-        <div class="vertical_menu">
-          <button class="vertical_menu_button">Activities</button>
-          <div class="vertical_menu-content">
-            <a href="icebreakers.html">Ice Breakers</a>
-            <a href="game-designs.html">Game Designs</a>
-            <a href="3D-designs.html">3D Designs</a>
-          </div>
-        </div> 
-      </div>   
+  
+    <!--Menu Section-->
+    
+    <!--Side Menu-->
+    <!--adding javascript-->
+    <script src="sideMenu.js"></script>
+      
+    <!--similar concept as the main menu-->
+    <div id="side_menu_id" class="side_menu">
+        <!--application of js-->
+        <a class="close_button" onclick="closeButton()">
+            <span style='font-size:100%'>&#10006;</span>
+        </a>
+        <a class="side_menu_link" href="index.html">News</a>
+        <a class="side_menu_link" href="about.html">About</a>
+        <div class="extra_menu">
+            <a onclick="showingExtraMenu1()" class="extra_menu_button">History</a>
+            <div id="extra_menu_id1" class="extra_menu_content">
+                <a class="extra_menu_link" href="alumni.html">Alumni</a>
+                <a class="extra_menu_link active" href="2018-2019.html">2018-2019</a>
+                <a class="extra_menu_link" href="2017-2018.html">2017-2018</a>
+                <a class="extra_menu_link" href="2016-2017.html">2016-2017</a>
+            </div>      
+        </div>
+        <a class="side_menu_link" href="gallery.html">Gallery</a>
+        <a class="side_menu_link" href="code B.html">Code B</a>
+        <div class="extra_menu">
+            <a onclick="showingExtraMenu2()" class="extra_menu_button">Activities</a>
+            <div id="extra_menu_id2" class="extra_menu_content">
+                <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
+            </div>      
+        </div>
     </div>
-    <div class="vertical_line"></div>
-    <div class="center2"><b>2018-2019</b></div>
-    <div class="center"><img style="width:250px" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo"></div>
-  </div>
-  <!--End of Menu section-->
+  
+    <!--Normal Menu-->
+    <div class="header">
+        <img class="header_picture" src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture">
+        <div class="header-right">
+            <div class="menu">
+                <a href="index.html">News</a>
+                <a href="about.html">About</a>
+                <div class="vertical_menu">
+                    <button class="vertical_menu_button">History</button>
+                    <div class="vertical_menu-content">
+                        <a href="alumni.html">Alumni</a>
+                        <a class="active" href="2018-2019.html">2018-2019</a>
+                        <a href="2017-2018.html">2017-2018</a>
+                        <a href="2016-2017.html">2016-2017</a>
+                    </div>
+                </div>
+                <a href="gallery.html">Gallery</a>
+                <a href="code B.html">Code B</a>
+                <div class="vertical_menu">
+                    <button class="vertical_menu_button">Activities</button>
+                    <div class="vertical_menu-content">
+                        <a href="icebreakers.html">Ice Breakers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="open_button" onclick="openButton()">
+            <div></div>  
+            <div></div>  
+            <div></div>  
+        </div>
+        <div class="vertical_line"></div>
+        <div class="center2"><b>2018-2019</b></div>
+        <img class="center" style="width:250px" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo">
+    </div>
+    <!--End of Menu section-->
+    
+    <!--Beginning of main page-->
+    <div class="main">
+        <!--Beginning of sidebar with links to spots on page-->
+        <div class="sidebar">
+            <!--list of different spots on page-->
+            <ul>
+                <li> <a href="#Overview">Overview</a> </li>
+                <li> <a href="#Events">Events</a> </li>
+                <li> <a href="#Achievements">Achievements</a> </li>
+                <li> <a href="#Officers">Officers</a> </li>
 
-<h3>Our History</h3>
+            </ul>
 
-</body>
-</html>
+        </div>
+        <!--Beginning of main content of the page-->
+        <div class="text">
 
+
+            <h3 class="jumpmargin" id="Overview" style="margin-top: -30px">Overview</h3>
+            <img src="STEM Pictures/History/2018-2019.JPG" style="margin-bottom: 30px;">
+            <p>
+                2018-2019 was a very eventful and exciting year for STEM at Bolsa Grande Highshcool. STEM members participated in many activities, such as the MESA day competition as well as various icebreakers. At the annual Mesa Day competition, 3 teams
+                placed in the regional competition and 1 team made it all the way to the National competition.
+            </p>
+            <div class="events">
+                <h3 class="jumpmargin" id="Events">Events</h3>
+                <p>
+                    Throughout 2018-2019, BGHS's STEM had many events. Here are a list of all (or most) of the events from the year.
+                </p>
+
+                <h4>Mesa Competition</h4>
+                
+                <div class="img_text">
+                    <img src="STEM%20Pictures/History/2018-2019.JPG">
+                    <p>Preliminary Teams</p>
+                </div>
+                <p>STEM continued to participate in the annual Mesa Competition where they achieved many accomplishments.</p>
+                <h4>Banquet</h4>
+                <p>STEM's annual banquet at the end of the year was held at Teppanyaki Grill Supreme Buffet on June 1st, 2019 (no photos)</p>
+                <h4>Boba Fundraiser</h4>
+                <img src="STEM Pictures/2018-2019/boba.jpg" style="max-height:500px;">
+                <p>STEM hosted a Boba fundraiser during this year in order to raise funds for the club's growth and development, as well as for supplies for club members.</p>
+            </div>
+            <div class="achievements">
+                <h3 class="jumpmargin" id="Achievements">Achievements</h3>
+                <p>
+                    2017-2018 was a very successful year for BGHS's STEM Club. STEM achieved great achievements during the Mesa Day competition.
+                    Some notable achievements are:
+                </p>
+
+                <div class="img_text">
+                    <img src="STEM%20Pictures/STEM4.jpg">
+                    <p>3rd Place NEDC State Competition- David Chuong, Minh Duong, Khang Nguyen, and Huy Banh</p>
+                </div>
+                
+                <ul>
+                    <li>2nd place 9/10th grade Prosthetic Arm Regional- Bianca Le, Tiffany Tran, Duy Pham</li>
+                    <li>2nd Place MESA Machine Preliminary -Alex Davalos, William Tran, Dererck Bui</li>
+                    <li>2nd place 9/10th Grade Wright Turn Glider Preliminary - Thomas To, Kevin Mach</li>
+                    <li>3rd place Think Tank Preliminary - Hector Flores, Joaquin Lopez, Ryan Dough</li>
+                </ul>
+               
+            </div>
+            <!--Beginning of officer section-->
+            <h3 class="jumpmargin" id="Officers">Officers</h3>
+            <!--div class used for flex positioning-->
+            <div class="column">
+                <!--Each div class="officer" block is an officer-->
+                <div class="officer">
+                    <h3>David Chuong</h3>
+                    <div class="border">
+                        <img src="STEM Pictures/2018-2019/David.jpg">
+                        <p> David held the position of President during this year. He was a Senior at the time and had been in STEM for his entire highschool career. He participated in NEDC for 3 years where he made it to regionals, state, and even national competitions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="officer">
+                    <h3>Hector Flores</h3>
+                    <div class="border">
+                        <img src="STEM Pictures/2018-2019/Hector.jpg">
+                        <p> Hector held the position of Vice president as a junior during this year. He has been in STEM from the very beginning of his highschool career and hopes to become an aerospace engineer.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="officer">
+                    <h3>Minh Duong</h3>
+                    <div class="border">
+                        <img src="STEM%20Pictures/2018-2019/Minh.jpg">
+                        <p> Minh held the position of Treasurer during this year. He was a sophmore at the time and had also been in STEM in his freshmen year. He is interested in pursing computer science and loves to apply the tools he builds to help others.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="officer">
+                    <h3>Hubert Tran</h3>
+                    <div class="border">
+                        <img src="STEM%20Pictures/2018-2019/Hubert.jpg">
+                        <p> Hubert held the position of activities chair during this year. He was a senior at the time and was is oneof the most experienced on the board that year, having served as an officer for multiple years.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="officer">
+                    <h3>Huy Banh</h3>
+                    <div class="border">
+                        <img src="STEM%20Pictures/2018-2019/Huy.jpg">
+                        <p> Huy held the position of activities chair during this year. He was a senior at the time and is known for his impressive accomplishments in the wright turn glider competition.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="officer">
+                    <h3>Evan Botros</h3>
+                    <div class="border">
+                        <img src="STEM%20Pictures/2018-2019/Evan.jpg">
+                        <p> Evan held the position of activities chair during this year. He was a junior at the time and had been in STEM for 3 years. He is described by his peers as more serious and hardworking, but can work well in a team.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="officer">
+                    <h3>Alex Davalos</h3>
+                    <div class="border">
+                        <img src="STEM%20Pictures/2018-2019/Alex.jpg">
+                        <p> Alex held the position of Actvities Chair during this year. He was a senior at the time and was personally invited into the club as an officer by the advisor. He is known by his peers as outgoing, dedicated, funny, and smart.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="officer">
+                    <h3>Joaquin Lopez</h3>
+                    <div class="border">
+                        <img src="STEM%20Pictures/2018-2019/Joaquin.jpg">
+                        <p> Joaquin held the position of Secretary as a senior during this year. He has been in STEM for 4 years and hopes to complete his bachelors degree for history.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body></html>

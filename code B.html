@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
   <title>
     STEM Club 
   </title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="aesthetic.css">
+  <link rel="stylesheet" href="code%20B.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
 </head>
+
 <body>
+
   <!--menu Section-->
+  
+  <!--Side Menu-->
+  <!--adding javascript-->
+  <script src="sideMenu.js"></script>
+      
+  <!--similar concept as the main menu-->
+  <div id="side_menu_id" class="side_menu">
+    <!--application of js-->
+    <a class="close_button" onclick="closeButton()">
+      <span style='font-size:100%'>&#10006;</span>
+    </a>
+    <a class="side_menu_link" href="index.html">News</a>
+    <a class="side_menu_link" href="about.html">About</a>
+    <div class="extra_menu">
+      <a onclick="showingExtraMenu1()" class="extra_menu_button">History</a>
+      <div id="extra_menu_id1" class="extra_menu_content">
+        <a class="extra_menu_link" href="alumni.html">Alumni</a>
+        <a class="extra_menu_link" href="2018-2019.html">2018-2019</a>
+        <a class="extra_menu_link" href="2017-2018.html">2017-2018</a>
+        <a class="extra_menu_link" href="2016-2017.html">2016-2017</a>
+      </div>      
+    </div>
+    <a class="side_menu_link" href="gallery.html">Gallery</a>
+    <a class="side_menu_link  active" href="code B.html">Code B</a>
+    <div class="extra_menu">
+      <a onclick="showingExtraMenu2()" class="extra_menu_button">Activities</a>
+      <div id="extra_menu_id2" class="extra_menu_content">
+        <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
+      </div>      
+    </div>
+  </div>
+  
+  <!--Normal Menu-->
   <div class="header">
     <img class="header_picture"src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture"> 
     <div class="header-right">
       <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="achievements.html">Achievements</a>
+        <a href="index.html">News</a>
+        <a href= "about.html">About</a>
         <div class="vertical_menu">
           <button class="vertical_menu_button">History</button>
           <div class="vertical_menu-content">
@@ -33,19 +69,64 @@
           <button class="vertical_menu_button">Activities</button>
           <div class="vertical_menu-content">
             <a href="icebreakers.html">Ice Breakers</a>
-            <a href="game-designs.html">Game Designs</a>
-            <a href="3D-designs.html">3D Designs</a>
           </div>
         </div> 
       </div>   
     </div>
+    <div class="open_button" onclick="openButton()">
+      <div></div>  
+      <div></div>  
+      <div></div>  
+    </div>
     <div class="vertical_line"></div>
     <div class="center2"><b>Code B</b></div>
-    <div class="center"><img style="width:250px" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo"></div>
+    <img class="center" style="width: 250px" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo">
   </div>
-  <!--End of Menu section--)
+  <!--End of Menu section-->
 
-<h3>Our Program</h3>
+  <!--Start of main content-->
+    <div class="main">
+        <h2>Our Program</h2>
+        <p> Code B is one of many opportunities in Bolsa Grande Highschool's STEM club that allows future programmers or games design to build a path for themselves or sharpen their skills in programming. BGHS STEM Alumni founded the program and are working diligently to create informative tutorials on how to code, in order to design games. You will learn step by step on how to design and code games with informative tutorials lasting 5-15 minutes. Learn what it takes to make a professional or fun game with NASA software engineer Julian Vu and experience the fun process of game design
+        </p>
+        <h2> Developers of Code B </h2>
+        <!--Used as flex container for coulmn positioning-->
+        <div class="column">
+            <!--flex items-->
+            <div class="developer">
+                <h3>Julian Vu</h3>
+                <div class="border">
+                    <img src="STEM Pictures/Code%20B/Julian.jpg" alt="Julian Vu">
+                    <p>Julian Vu got the idea for Code B when he noticed that Bolsa did not have any computer science class. He hopes to get more students to learn how to code in order to prepare them for an increasingly technological world. He is now the mentor for the program and is in all of the video tutorials for Code B</p>
+                </div>
+            </div>
+            <div class="developer">
+                <h3>Danny Vo</h3>
+                <div class="border">
+                    <img src="STEM Pictures/Code%20B/Danny.png" alt="Danny Vo">
+                    <p>Danny Vo was a Junior at the time when he realized the lack of coding classes or clubs on Bolsa's campus, as well as the fact that many Bolsa Grande Graduates where graduating as computer science majors, without ever having the chance to code before. He wanted to help students learn how to code in a comfortable environment so they could achieve greater heights in college.</p>
+                </div>
+            </div>
+            <div class="developer">
+                <h3>Duy Pham</h3>
+                <div class="border">
+                    <img src="STEM Pictures/Code%20B/Duy.jpg" alt="Duy Pham">
+                    <p>Duy Pham is the third co-developer for Code B. (no comments available currently).</p>
+                </div>
+            </div>
 
-</body>
-</html>
+        </div>
+        <h2> Student Examples (Coming Soon)</h2>
+        <div class="examples">
+            <div class="games">
+            <a href="game"><img src="STEM%20Pictures/Code B/box.png"></a>
+            </div>
+            <div class="games">
+            <a href="game"><img src="STEM%20Pictures/Code B/box.png"></a>
+            </div>
+            <div class="games">
+            <a href="game"><img src="STEM%20Pictures/Code B/box.png"></a>
+            </div>
+        </div>
+    </div>
+</body></html>
