@@ -108,6 +108,7 @@ body {
     max-width: 500px;
     margin: 10px auto;
     position: relative;
+    
 }
 
 .img_text p {
@@ -119,7 +120,7 @@ body {
     text-indent: 0;
     width: 98%;
     padding: 5px;
-    font-size: 110%;
+    font-size: 1.5vw;
 }
 
 .achievements ul {
@@ -190,5 +191,8 @@ body {
     }
     .main {
         margin-right: 80px;
+    }
+    .img_text p {
+    	width: calc(100vw - 287px)
     }
 }
