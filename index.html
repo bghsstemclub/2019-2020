@@ -1,135 +1,204 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>
-    STEM Club 
-  </title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="aesthetic.css">
-  <link rel="stylesheet" href="parallax.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>
+        STEM Club
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aesthetic.css">
+    <link rel="stylesheet" href="news.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-  <!--Menu Section-->
-  <div class="header">
-    <img class="header_picture"src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture"> 
-    <div class="header-right">
-      <div class="menu">
-        <a class="active" href="index.html">Home</a>
-        <a href="achievements.html">Achievements</a>
-        <div class="vertical_menu">
-          <button class="vertical_menu_button">History</button>
-          <div class="vertical_menu-content">
-            <a href="alumni.html">Alumni</a>
-            <a href="2018-2019.html">2018-2019</a>
-            <a href="2017-2018.html">2017-2018</a>
-            <a href="2016-2017.html">2016-2017</a>
-          </div>
-        </div> 
-        <a href="gallery.html">Gallery</a>
-        <a href="code B.html">Code B</a>
-        <div class="vertical_menu">
-          <button class="vertical_menu_button">Activities</button>
-          <div class="vertical_menu-content">
-            <a href="icebreakers.html">Ice Breakers</a>
-            <a href="game-designs.html">Game Designs</a>
-            <a href="3D-designs.html">3D Designs</a>
-          </div>
-        </div> 
-      </div>   
-    </div>
-    <div class="vertical_line"></div>
-    <div class="center2"><b>Home</b></div>
-    <div class="center"><img style="width:250px" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo"></div>
-  </div>
-  <!--End of Menu section-->
-
-  <!--Rolling effect-->
-  <!--boxes for info with fixed position-->
-  <div class="box0" style="background-image: linear-gradient(to bottom right, rgb(103, 222, 226),rgb(39, 146, 233));">
-    <div class="row">
-      <div class="column2" style="padding: 140px 50px;">
-          <h1><b>OUR VISION</b></h1>
-      </div>
-      <div class="column1" style="padding: 70px 50px;">
-          <p>To provide a challenging learning environment in Science, Technology, Engineering, and Math,
-          which maximizes individual potential and ensures students are well-prepared to meet the challenges 
-          in the world around them</p>
-      </div>
-    </div>
-  </div>
-
-  <!--first picture-->
-  <div class="box1"></div>
-
-  <!--2nd info box with 3 images that have hyperlinks-->
-  <div class="box0" style="background-image: linear-gradient(to bottom left, rgb(103, 222, 226),rgb(39, 146, 233));">
-    <div class="row">
-      <div class="column1">
-        <div class="img_size">
-          <img class="img_within" src="STEM Pictures/icebreakers.png" alt="icebreakers">       
-          <a href="icebreakers.html">                
-            <div class="fade">
-              <div class="center3">Icebreakers</div>
-            </div>
-          </a>
-        </div>
+    <!--Menu Section-->
     
-        <div class="img_size">
-          <img class="img_within" src="STEM Pictures/game-designs.JPG" alt="game-designs">
-          <a href="game-designs.html">
-            <div class="fade">
-              <div class="center3">Game Designs</div>
-            </div>
-          </a>
+    <!--Side Menu-->
+    <!--adding javascript-->
+    <script src="sideMenu.js"></script>
+      
+    <!--similar concept as the main menu-->
+    <div id="side_menu_id" class="side_menu">
+        <!--application of js-->
+        <a class="close_button" onclick="closeButton()">
+            <span style='font-size:100%'>&#10006;</span>
+        </a>
+        <a class="side_menu_link  active" href="index.html">News</a>
+        <a class="side_menu_link" href="about.html">About</a>
+        <div class="extra_menu">
+            <div class="extra_menu_button">History</div>
+            <div class="extra_menu_content">
+                <a class="extra_menu_link" href="alumni.html">Alumni</a>
+                <a class="extra_menu_link" href="2018-2019.html">2018-2019</a>
+                <a class="extra_menu_link" href="2017-2018.html">2017-2018</a>
+                <a class="extra_menu_link" href="2016-2017.html">2016-2017</a>
+            </div>    
+        </div>  
+        <a class="side_menu_link" href="gallery.html">Gallery</a>
+        <a class="side_menu_link" href="code B.html">Code B</a>
+        <div class="extra_menu">
+            <a class="extra_menu_button">Activities</a>
+            <div class="extra_menu_content">
+                <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
+            </div>      
         </div>
-    
-        <div class="img_size">
-          <img class="img_within" src="STEM Pictures/3d-designs.jpg" alt="3D-designs">
-          <a href="3D-designs.html">
-            <div class="fade">
-              <div class="center3">3D-Designs</div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="column2">
-      <h1><b>WHAT WE DO</b></h1>
-      </div>
     </div>
-  </div>
-
-  <!--2nd Picture-->
-  <div class="box2"></div>
-
-  <!--box consists of an image with hyperlink-->
-  <div class="box0" style="background-image: linear-gradient(to bottom right, rgb(103, 222, 226),rgb(39, 146, 233));">
-    <div class="row">
-      <div class="column2" style="padding: 20px 50px;">
-        <h1 style="font-size: 64px"><b>BIGGER ASSOCIATION</b></h1>
-      </div>
-      <div class="column1">
-        <div class="column2">
-          <img style="height: 230px" src="STEM Pictures/Samueli.JPG" alt="Samueli">
-          <img style="height: 250px" src="STEM Pictures/Sideline.JPG" alt="Sideline">
+  
+    <!--Normal Menu-->
+    <div class="header">
+        <img class="header_picture" src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture">
+        <div class="header-right">
+            <div class="menu">
+                <a class="active" href="index.html">News</a>
+                <a href="about.html">About</a>
+                <div class="vertical_menu">
+                    <button class="vertical_menu_button">History</button>
+                    <div class="vertical_menu-content">
+                        <a href="alumni.html">Alumni</a>
+                        <a href="2018-2019.html">2018-2019</a>
+                        <a href="2017-2018.html">2017-2018</a>
+                        <a href="2016-2017.html">2016-2017</a>
+                    </div>
+                </div>
+                <a href="gallery.html">Gallery</a>
+                <a href="code B.html">Code B</a>
+                <div class="vertical_menu">
+                    <button class="vertical_menu_button">Activities</button>
+                    <div class="vertical_menu-content">
+                        <a href="icebreakers.html">Ice Breakers</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="column1">
-          <img src="STEM Pictures/MESA.JPG" alt="MESA">
-          <div class="img_size">
-            <img class="img_within" src="STEM Pictures/Code B.jpg" alt="game-designs">
-            <a href="code B.html">
-              <div class="fade">
-                <div class="center3">Code B</div>
-              </div>
+        <div class="open_button" onclick="openButton()">
+            <div></div>  
+            <div></div>  
+            <div></div>  
+        </div>
+        <div class="vertical_line"></div>
+        <div class="center2"><b>News</b></div>
+        <img class="center" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo">
+    </div>
+    <!--End of Menu section-->
+
+    <!--Slide Show-->
+    <script src="news.js"></script>
+        <!--Javascript Code-->
+    <div class="slideshow_container">
+        <div class="crop">
+            <img name="slideShow" alt="slideShow">
+            <div id="fade3"></div>
+        </div>
+    </div>
+    <!--End of Slide Show-->
+
+    <!--Home Description Section-->
+    <div class="home_container">
+        <h1 class="title">
+            STEM - A Hands-On Experience Club
+        </h1>
+        <div class="row">
+            <!--Picture of the STEM Logo-->
+            <a href="index.html">
+                <div class="column_home1" style="padding: 40px">
+                    <img src="STEM Pictures/STEM logo1.png" alt="STEM logo">
+                </div>
             </a>
-          </div>
+            <!--Description about the club-->
+            <div class="column_home2">
+                <p>
+                    STEM Club is a gathering of students that meets regularly in a learning environment to work on inquiry-based Science, Technology, Engineering and Math related activities/projects.
+                    <br><br>STEM strives to offers students an opportunity to learn coding as well as to develop critical thinking and collaboration skills - all with the goal to represent Bolsa Grande well
+                    at STEM-based competitions and preparing the students to meet the challenges in the world around them.
+                    <br><br>In the past years, STEM has placed top three in both State and National level for the MESA Engineering Design Competition.
+                </p>
+                <!--button link to home-->
+                <a href="about.html">
+                    <button class="button_news" style="color: black">
+                        CLICK TO SEE MORE ABOUT US
+                    </button>
+                </a>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 
-  <!--3rd picture-->
-  <div class="box3"></div>
+    <div class="home_container" style="color: white; background: rgb(40, 136, 153)">
+        <div class="row">
+            <!--News Column-->
+            <div class="column_news_holder">
+                <a class="link_color" href="Articles/articles_holder.html">
+                    <h1 style="font-size: 50px">
+                        Latest News
+                    </h1>                    
+                </a>
+                <hr>
+                <!--First Article-->
+                <!--Same Concept for columns and rows as the top-->
+                <div class="row">
+                    <div class="column_news1">
+                        <h2 style="margin-top: 10px">STEM takes 1st places </h2>
+                        <p style="font-size: 85%">
+                            Congratulation to David Chuong, Huy Banh, Minh Duong, and Khanh for taking first place overall at the Regional Level in the MESA National Engineering Design Compeition. Their achievement has truly shown the commitment and dedication in developing and building a function electronic device created to solve authentic real-world problems. We are the STEMatador!
+                        </p>
+                        <a href="Articles/article1.html" target="_blank">
+                            <!--Link to the First Article-->
+                            <button class="button_news">
+                                read more >>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="column_news2">
+                        <img src="STEM Pictures/STEM4.jpg" alt="NEDC 2018-2019">
+                    </div>
+                </div>
+                <hr>
+                <!--Second Article-->
+                <div class="row">
+                    <div class="column_news1">
+                        <h2>STEM takes 1st places </h2>
+                        <p style="font-size: 85%">
+                            Congratulation to David Chuong, Huy Banh, Minh Duong, and Khanh for taking first place overall at the Regional Level in the MESA National Engineering Design Compeition. Their achievement has truly shown the commitment and dedication in developing and building a function electronic device created to solve authentic real-world problems. We are the STEMatador!
+                        </p>
+                        <!--Link to the Second Article -->
+                        <a href="Articles/article2.html" target="_blank">
+                            <button class="button_news">
+                                read more >>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="column_news2">
+                        <img src="STEM Pictures/STEM4.jpg" alt="NEDC 2018-2019">
+                    </div>
+                </div>
+            </div>
+            <!--Calendar Column-->
+            <div class="column_calendars">
+                <!--Link to the club calendar-->
+                <a class="link_color" target="_blank" href="https://calendar.google.com/calendar?cid=cmJjOW1vMTlrMTRwcHVmM2JraXY4MTBjamdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">
+                    <h1 style="font-size: 50px">
+                        Calendar
+                    </h1>                
+                </a>
+                <!--Link to the event-->
+                <a class="link_color" target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MG12YTg1OGFnaGtsYmlmYzJlNmt1NGJqYWggbWluaGR1b25nc3RlbWNsdWJAbQ&amp;tmsrc=minhduongstemclub%40gmail.com">
+                    <div class="row">
+                        <h2>STEM Introductory Meeting</h1>
+                        <h4>Date: 9/21/2019</h4>
+                    </div>                    
+                </a>
+                <!--Link to the event-->
+                <a class="link_color" target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MWg0OWc5Y3NrMzMzOW52dGtpamk2Ym5wbDQgbWluaGR1b25nc3RlbWNsdWJAbQ&tmsrc=minhduongstemclub%40gmail.com">
+                    <div class="row">
+                        <h2>Button Fundraiser</h1>
+                        <h4>Date: 10/28/2019 to 11/1/2019</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>

@@ -4,30 +4,20 @@ body{
   padding: 0px;
 }
 
+.crop{
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
 .header_picture {
   filter: blur(2.3px) brightness(90%);
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
 /* the headers mark up for every page*/
-/*styles for the logo*/
-.center {   
-  position: absolute;
-  top: 4%;
-  left: 3.2%;
-  font-size: 100px;
-  font-family: monospace;
-  filter: brightness(140%);
-}
-
-/*specific headers for every page*/
-.center2 {
-  position: absolute;
-  top: 37%;
-  left: 5.3%;
-  font-size: 70px;
-  font-family: monospace;
-  color: rgb(255, 255, 255);
-}
 
 /*a cool-looking vertical line*/
 .vertical_line {
@@ -49,6 +39,8 @@ img{
   width: 100%;
   height: auto;
   border-radius: 10px;
+  margin-top: 6px;
+  margin-bottom: 10px;
 }
 
 /*image size for "WHAT WE DO"*/
@@ -113,12 +105,8 @@ img{
 }
   /*end of fade aspect*/
 
-@media screen and (max-width: 800 px){
-  .center3 {
-    font-size: 20px;
-  }
-
-  .fade2{
-    font-size: 10px;
+@media screen and (max-width: 1000px) {
+  .center3{
+    font-size: 25px;
   }
 }

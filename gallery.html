@@ -13,12 +13,45 @@
 </head>
 <body>
   <!--Menu Section-->
+  
+  <!--Side Menu-->
+  <!--adding javascript-->
+  <script src="sideMenu.js"></script>
+      
+  <!--similar concept as the main menu-->
+  <div id="side_menu_id" class="side_menu">
+    <!--application of js-->
+    <a class="close_button" onclick="closeButton()">
+      <span style='font-size:100%'>&#10006;</span>
+    </a>
+    <a class="side_menu_link" href="index.html">News</a>
+    <a class="side_menu_link" href="about.html">About</a>
+    <div class="extra_menu">
+      <a class="extra_menu_button">History</a>
+      <div class="extra_menu_content">
+        <a class="extra_menu_link" href="alumni.html">Alumni</a>
+        <a class="extra_menu_link" href="2018-2019.html">2018-2019</a>
+        <a class="extra_menu_link" href="2017-2018.html">2017-2018</a>
+        <a class="extra_menu_link" href="2016-2017.html">2016-2017</a>
+      </div>      
+    </div>
+    <a class="side_menu_link active" href="gallery.html">Gallery</a>
+    <a class="side_menu_link" href="code B.html">Code B</a>
+    <div class="extra_menu">
+      <a class="extra_menu_button">Activities</a>
+      <div class="extra_menu_content">
+        <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
+      </div>      
+    </div>
+  </div>
+  
+  <!--Normal Menu-->
   <div class="header">
     <img class="header_picture"src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture"> 
     <div class="header-right">
       <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="achievements.html">Achievements</a>
+        <a href= "index.html">News</a>
+        <a href= "about.html">About</a>
         <div class="vertical_menu">
           <button class="vertical_menu_button">History</button>
           <div class="vertical_menu-content">
@@ -34,27 +67,30 @@
           <button class="vertical_menu_button">Activities</button>
           <div class="vertical_menu-content">
             <a href="icebreakers.html">Ice Breakers</a>
-            <a href="game-designs.html">Game Designs</a>
-            <a href="3D-designs.html">3D Designs</a>
           </div>
         </div> 
       </div>   
     </div>
+    <div class="open_button" onclick="openButton()">
+      <div></div>  
+      <div></div>  
+      <div></div>  
+    </div>
     <div class="vertical_line"></div>
     <div class="center2"><b>Gallery</b></div>
-    <div class="center"><img style="width:250px" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo"></div>
+    <img class="center" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo">
   </div>
   <!--End of Menu section-->
 
   <!--Gallery Section-->
   <!--Achievement-->
-  <div class="header_gallery" style="padding: 60px 30px 30px 30px">
+  <div class="header_gallery">
     <h1><b>ACHIEVEMENTS</b></h1>
   </div>
   <hr class="line">
   <div class="row">
     <div class="column3"></div>
-    <div class="column1" style="max-width: 52%">
+    <div class="column1a">
       <div class="img_size">
         <img class="img_within" style="height: auto; width: 100%" src="STEM Pictures/Achievements/Achievement2.jpg" alt="2017-2018 NEDC">
         <div class="fade2">
@@ -69,7 +105,7 @@
         </div>
       </div>
     </div>
-    <div class="column2" style="max-width: 33%">
+    <div class="column2a">
       <div class="img_size">
         <img class="img_within" style="height: auto; width: 100%" src="STEM Pictures/Achievements/Achievement3.JPG" alt="2018-2019 MESA Machine">
         <div class="fade2">
@@ -86,7 +122,7 @@
     <div class="column3"></div>
   </div>
 
-  <a href="achievements.html">  
+  <a href="2018-2019.html">  
     <button class="buttonPosition">
       More Info
     </button>
@@ -99,32 +135,31 @@
   <hr class="line">
   <div class="row">
     <div class="column3"></div>
-    <div class="column2" style="width: 36.25%">
+    <div class="column1b">
       <div class="img_size">
         <img class="img_within" src="STEM Pictures/Icebreakers/Icebreaker1.JPG" alt="2018-2019 NEDC">
         <div class="fade2">
-          MESA Machine: 2nd Place(2018-2019 Preliminary)<br>Derreck Bui, William Tran, Alejandro davalos
+          Mouse Trap Car Challenge
         </div>
       </div>
       <div class="img_size">
         <img class="img_within" src="STEM Pictures/Icebreakers/Icebreaker2.JPG" alt="2018-2019 NEDC">
         <div class="fade2">  
-          MESA NEDC Competition: 3rd Place(2018-2019 State)<br>Huy Banh, Minh Duong, David Chuong, Khanh Nguyen
+          Straw Bridge Challenge
         </div>
       </div>
     </div>
-    <div class="column1" style="width: 48.75%">
+    <div class="column2b">
       <div class="img_size">
         <img class="img_within" src="STEM Pictures/Icebreakers/Icebreaker3.JPG" alt="2017-2018 NEDC">
         <div class="fade2">
-          MESA NEDC Competition: 1st Place (2017-2018 Regional)<br>Duy Pham, David Chuong, Danny Vo
+          Popsticle Stick Bridge Challenge
         </div>
       </div>
       <div class="img_size">
         <img class="img_within" src="STEM Pictures/Icebreakers/Icebreaker4.JPG" alt="2017-2018 NEDC">
         <div class="fade2">
-          MESA NEDC Competition: 2nd Place(2017-2018 National)<br>Duy Pham, David Chuong, Danny Vo
-          <br>Advisor: Ryan Tonthat<br>Director: Nicole Patterson
+          Mouse Trap Car Challenge: Preparation
         </div>
       </div>
     </div>
@@ -139,12 +174,12 @@
 
   <!--Game Designs-->
   <div class="header_gallery">
-    <h1><b>GAME DESIGNS</b></h1>
+    <h1><b>GAME DESIGNS (Coming Soon)</b></h1>
   </div>
   <hr class="line">
   <div class="row">
     <div class="column3"></div>
-    <div class="column1" style="width: 52%">
+    <div class="column1c">
       <div class="img_size">
         <img class="img_within" src="STEM Pictures/Achievements/Achievement2.jpg" alt="2017-2018 NEDC">
         <div class="fade2">
@@ -159,7 +194,7 @@
         </div>
       </div>
     </div>
-    <div class="column2" style="width: 33%">
+    <div class="column2c">
       <div class="img_size">
         <img class="img_within" src="STEM Pictures/Achievements/Achievement3.JPG" alt="2018-2019 MESA Machine">
         <div class="fade2">
@@ -181,51 +216,6 @@
       More Info
     </button>
   </a>
-  
-  <!--3D-Designs-->
-  <div class="header_gallery">
-    <h1><b>3D DESIGNS</b></h1>
-  </div>
-  <hr class="line">
-  <div class="row">
-    <div class="column3"></div>
-    <div class="column2" style="width: 33%">
-      <div class="img_size">
-        <img class="img_within" src="STEM Pictures/Achievements/Achievement3.JPG" alt="2018-2019 MESA Machine">
-        <div class="fade2">
-          MESA Machine: 2nd Place(2018-2019 Preliminary)<br>Derreck Bui, William Tran, Alejandro davalos
-        </div>
-      </div>
-      <div class="img_size">
-        <img class="img_within" src="STEM Pictures/STEM4.jpg" alt="2018-2019 NEDC">
-        <div class="fade2">  
-          MESA NEDC Competition: 3rd Place(2018-2019 State)<br>Huy Banh, Minh Duong, David Chuong, Khanh Nguyen
-        </div>
-      </div>
-    </div>
-    <div class="column1" style="width: 52%">
-      <div class="img_size">
-        <img class="img_within" src="STEM Pictures/Achievements/Achievement1.jpg" alt="2017-2018 NEDC">
-        <div class="fade2">
-          MESA NEDC Competition: 1st Place (2017-2018 Regional)<br>Duy Pham, David Chuong, Danny Vo
-        </div>
-      </div>
-      <div class="img_size">
-        <img class="img_within" src="STEM Pictures/Achievements/Achievement2.jpg" alt="2017-2018 NEDC">
-        <div class="fade2">
-          MESA NEDC Competition: 2nd Place(2017-2018 National)<br>Duy Pham, David Chuong, Danny Vo
-          <br>Advisor: Ryan Tonthat<br>Director: Nicole Patterson
-        </div>
-      </div>
-    </div>
-    <div class="column3"></div>
-  </div>
-  
-  <a href="3D-designs.html">  
-    <button class="buttonPosition">
-      More Info
-    </button>
-  </a>
 
   <!--History-->
   <div class="header_gallery">
@@ -234,7 +224,7 @@
   <hr class="line">
   <div class="row">
     <div class="column3"></div>
-    <div class="column1" style="width: 42.5%">
+    <div class="columne">
       <div class="img_size">
         <img class="img_within" src="STEM Pictures/History/2018-2019.JPG" alt="2017-2018 NEDC">
         <a href="2018-2019.html">
@@ -252,7 +242,7 @@
         </a>
       </div>
     </div>
-    <div class="column2" style="width: 42.5%">
+    <div class="columne">
       <div class="img_size">
         <img class="img_within" src="STEM Pictures/History/2017-2018.JPG" alt="2018-2019 MESA Machine">
         <a href="2017-2018.html">
