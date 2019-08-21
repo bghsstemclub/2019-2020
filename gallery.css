@@ -66,7 +66,7 @@
 
 .header_gallery {
     text-align: center;
-    padding: 100px 30px 30px 30px;
+    padding: 40px 30px 30px 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
 }
@@ -83,9 +83,10 @@
     font-size: 16px;
     cursor: pointer;
     background-color: rgb(7, 160, 221);
-    position: absolute;
-    left: 45%;
+    position: relative;
     border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .buttonPosition:hover{
@@ -96,6 +97,16 @@
 @media screen and (max-width: 1000px){
     .column1a, .column2a, .column1b, .column2b, .column1c, .column2c, .column1d, .column2d, .columne{
         width: 100%;
+    }
+
+    .header_gallery{
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    .column3{
+        width: 0;
+        padding: none;
     }
 }
   
