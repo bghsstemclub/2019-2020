@@ -1,50 +1,339 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>
-    STEM Club 
-  </title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="aesthetic.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        STEM Club
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aesthetic.css">
+    <link rel="stylesheet" href="2016-2017.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 </head>
+
 <body>
-  <!--Menu Section-->
-  <div class="header">
-    <img class="header_picture"src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture"> 
-    <div class="header-right">
-      <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="achievements.html">Achievements</a>
-        <div class="vertical_menu">
-          <button class="vertical_menu_button">History</button>
-          <div class="vertical_menu-content">
-            <a href="alumni.html">Alumni</a>
-            <a href="2018-2019.html">2018-2019</a>
-            <a href="2017-2018.html">2017-2018</a>
-            <a class="active" href="2016-2017.html">2016-2017</a>
-          </div>
-        </div> 
-        <a href="gallery.html">Gallery</a>
-        <a href="code B.html">Code B</a>
-        <div class="vertical_menu">
-          <button class="vertical_menu_button">Activities</button>
-          <div class="vertical_menu-content">
-            <a href="icebreakers.html">Ice Breakers</a>
-            <a href="game-designs.html">Game Designs</a>
-            <a href="3D-designs.html">3D Designs</a>
-          </div>
-        </div> 
-      </div>   
+    <!--Menu Section-->
+        
+    <!--Side Menu-->
+    <!--adding javascript-->
+    <script src="sideMenu.js"></script>
+      
+    <!--similar concept as the main menu-->
+    <div id="side_menu_id" class="side_menu">
+        <!--application of js-->
+        <a class="close_button" onclick="closeButton()">
+            <span style='font-size:100%'>&#10006;</span>
+        </a>
+        <a class="side_menu_link" href="index.html">News</a>
+        <a class="side_menu_link" href="about.html">About</a>
+        <div class="extra_menu">
+            <a class="extra_menu_button">History</a>
+            <div class="extra_menu_content">
+                <a class="extra_menu_link" href="alumni.html">Alumni</a>
+                <a class="extra_menu_link" href="2018-2019.html">2018-2019</a>
+                <a class="extra_menu_link" href="2017-2018.html">2017-2018</a>
+                <a class="extra_menu_link active" href="2016-2017.html">2016-2017</a>
+            </div>      
+        </div>
+        <a class="side_menu_link" href="gallery.html">Gallery</a>
+        <a class="side_menu_link" href="code B.html">Code B</a>
+        <div class="extra_menu">
+            <a class="extra_menu_button">Activities</a>
+            <div class="extra_menu_content">
+                <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
+            </div>      
+        </div>
     </div>
-    <div class="vertical_line"></div>
-    <div class="center2"><b>2016-2017</b></div>
-    <div class="center"><img style="width:250px" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo"></div>
-  </div>
-  <!--End of Menu section-->
-<h3>Our History</h3>
+  
+    <!--Normal Menu-->
+    <div class="header">
+        <img class="header_picture" src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture">
+        <div class="header-right">
+            <div class="menu">
+                <a href="index.html">News</a>
+                <a href= "about.html">About</a>
+                <div class="vertical_menu">
+                    <button class="vertical_menu_button">History</button>
+                    <div class="vertical_menu-content">
+                        <a href="alumni.html">Alumni</a>
+                        <a href="2018-2019.html">2018-2019</a>
+                        <a href="2017-2018.html">2017-2018</a>
+                        <a class="active" href="2016-2017.html">2016-2017</a>
+                    </div>
+                </div>
+                <a href="gallery.html">Gallery</a>
+                <a href="code B.html">Code B</a>
+                <div class="vertical_menu">
+                    <button class="vertical_menu_button">Activities</button>
+                    <div class="vertical_menu-content">
+                        <a href="icebreakers.html">Ice Breakers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="open_button" onclick="openButton()">
+            <div></div>  
+            <div></div>  
+            <div></div>  
+        </div>
+        <div class="vertical_line"></div>
+        <div class="center2"><b>2016-2017</b></div>
+        <img class="center" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo">
+    </div>
+    <!--End of Menu section-->
+
+    <!--Page Navigation-->
+    <div class="row" style="filter: alpha(opacity=60); position: sticky; top: 0;background: white; z-index: 2">
+        <div class="column_side"></div>
+        <a href="#Overview" class="column_box">
+            Overview
+        </a>
+        <a href="#Events" class="column_box">
+            Events
+        </a>
+        <a href="#Achievements" class="column_box">
+            Achievements
+        </a>
+        <a href="#Officers" class="column_box">
+            Officers
+        </a>
+        <div class="column_side"></div>
+    </div>
+    <hr style="margin:0; width: 100%">
+    <!--Main Content-->
+
+    <div class="content">
+        <h2 id="Overview"> Overview </h2>    
+        <img class="img_header" src="STEM Pictures/History/2016-2017.JPG" alt="group picture of 2016-2017">
+        <p>
+            2016-2017 was a very exciting year for STEM Club at Bolsa Grande.
+            many of the STEM members participated in variety of events, such as the MESA day competition, coding competitions as well as various icebreakers. 
+            At the annual Mesa Day competition, many Bolsa STEM Teams had placed in top three at Prelim as well as Regional. 
+            Not only that, several outstanding STEM members participated in Hackathon and Congressional App competition, 
+            events that challenge student ability to code and construct products that are applicable in the real world.
+        </p>
+        <hr>
+        <h2 id="Events">Events</h2>
+        <p>
+            2016-2017 year is known for it's variety in events and projects. Here is a list of some of the notable events from the year:
+        </p>
+        <div class="row">
+            <div class="column_side"></div>
+            <div class="column_event1">
+                <img src="STEM Pictures/History/2016-2017/event1-app.jpg" alt="congressional app">
+            </div>
+            <div class="column_event2">
+                <h5 class="title_events">Congressional App Challenge</h5>
+                <p>This competition is designed to challenge students to create their orignial, and functional app - with the application of any programming languages.</p>
+            </div>
+            <div class="column_side"></div>
+        </div>
+        <div class="row">
+            <div class="column_side"></div>
+            <div class="column_event1">
+                <img src="STEM Pictures/History/2016-2017/event2-hack.jpg" alt="Hackathon">
+            </div>
+            <div class="column_event2">
+                <h5 class="title_events">Los Angeles Hackathon</h5>
+                <p>LA Hackathon competition is an event where computer programmers come together and make a focused effort to perfect a given software product. 
+                    It involves coding almost continuously for extended periods of time.  </p>
+            </div>
+            <div class="column_side"></div>
+        </div>
+        <div class="row">
+            <div class="column_side"></div>
+            <div class="column_event1">
+                <img src="STEM Pictures/History/2016-2017/event3-NEDC.jpg" alt="NEDC">
+            </div>
+           <div class="column_event2">
+                <h5 class="title_events">MESA National Engineering Design Competition</h5>
+                <p>
+                    In this competition, engineers are required to work in a team to implement a Human-Centered Design to a need. 
+                    There are many components listed, but the main ones are the successful intergration of Arduino, and a report to provide an overview of the design process  </p>
+                </p>
+            </div>
+            <div class="column_side"></div>
+        </div>
+        <hr>
+        <h2 id="Achievements">Achievements</h2>
+        <p>
+            2016-2017 was a successful year for STEM Club, as a large number of Bolsa teams taking top three in Prelim and Regional competitions
+        </p>
+        <div class="row">
+            <div class="column_side"></div>
+            <div class="column_officer" style="box-shadow: none">
+                <div class="row">
+                    <div class="column_achievement">
+                        <h6>Math at Large (10th)</h6>
+                        <ul>
+                            <li>Drew Penid - 1st Place </li>
+                            <li>Hubert Tran - 2nd Place</li>
+                        </ul>
+                    </div>
+                    <div class="column_achievement">
+                        <h6>Balsawood Airplane</h6>
+                        <ul>
+                            <li>Huy Banh, Joaquin Lopez - 2nd Place</li>
+                        </ul>
+                    </div>
+                    <div class="column_achievement">
+                        <h6>Prosthetic Arm</h6>
+                        <ul>
+                            <li>
+                                Technical Paper: 1st Place | Presentation: 2nd Place 
+                            </li>
+                            <li>
+                                David Chuong, Drew Penid, Kathy Le, Kimberly Ho
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+            <div class="column_officer" style="box-shadow: none">
+                <div class="row">
+                    <div class="column_achievement">
+                        <h6>Math Delegates</h6>
+                        <ul>
+                            <li>(10th) David Chuong - 3rd Place</li>
+                            <li>(11th) Long Ho - 3rd Place</li>
+                            <li>(12th) Johnlam Tran, Tiffany Trieu, Hien-Duc Ma - 2nd Places</li>
+                        </ul>
+                    </div>
+                    <div class="column_achievement">
+                        <h6>Wright Turn Glider</h6>
+                        <ul>
+                            <li>Huy Banh, Joaquin Lopez, Cortney Norasing, Hubert Tran, Patrick Nguyen - 1st Place </li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+            <div class="column_officer" style="box-shadow: none">
+                <div class="row">
+                    <div class="column_achievement">
+                        <h6>Speak Out</h6>
+                        <ul>
+                            <li>Melody Ong, Naomi Gutierrez, Emily Penaloza - 1st Place</li>
+                            <li>Tiffany Trieu, Hien-Duc Ma, Joanne Duong - 2nd Place</li>
+                        </ul>
+                    </div>
+                    <div class="column_achievement">
+                        <h6>Civil Structure</h6>
+                        <ul>
+                            <li>Hubert Tran - 1st Place</li>
+                        </ul>
+                    </div>
+                    <div class="column_achievement">
+                        <h6>Greenfoot</h6>
+                        <ul>
+                            <li>Danny Vo, Duy Pham, Kevin Le - 1st Place</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="column_side"></div>
+        </div>
+        <hr>
+        <h2 id="Officers" style="background: rgb(52, 209, 196)">Officers</h2>
+        <div class="row_officers">
+            <!--Columns for officers-->
+            <div class="column_side" style="background: rgb(52, 209, 196)"></div>
+            <div class="column_officer">
+                <img src="STEM Pictures/History/2016-2017/officer1.JPG" class="crop_img">
+
+                <h5>
+                    Steven Dang 
+                </h5>            
+                <h6>
+                    President
+                </h6>
+                <p>
+                    Steven held the position of President during this year.
+                    He was a Senior at the time and was one of the most experienced on the board that year,
+                    with STEM being his club for his entire highschool career.
+                </p>
+            </div>
+            <div class="column_officer">
+                    <img src="STEM Pictures/History/2016-2017/officer5.JPG" class="crop_img">
+
+                <h5>
+                    Huy Pham
+                </h5>
+                <h6>
+                    Vice-President
+                </h6>
+                <p>
+                    Huy held the position of Treasurer during this year.
+                    He was a Senior at the time and was one of the most experienced on the board that year,
+                    with STEM being his club for his entire highschool career.
+                </p>
+            </div>
+            <div class="column_officer">
+                <h5>
+                    Hien-Duc Ma
+                </h5>
+                <h6>
+                    Treasurer
+                </h6>
+                <p>
+                    Hien-Duc held the position of Treasurer during this year.
+                    She was a Senior at the time and was one of the most experienced on the board that year,
+                    with STEM being her club for her entire highschool career.
+                </p>
+            </div>
+            <div class="column_side" style="background: rgb(52, 209, 196)"></div>
+        </div>
+
+        <div class="row_officers">
+            <!--Second Row of officers-->
+            <div class="column_side" style="background: rgb(52, 209, 196)"></div>
+            <div class="column_officer">
+                <img src="STEM Pictures/History/2016-2017/officer3.JPG" class="crop_img">
+                <h5>
+                    Joanne Duong  
+                </h5>
+                <h6>
+                    Secretary
+                </h6>
+                <p>
+                    Joanne held the position of secretary during this year.
+                    She was a Junior at the time and was one of the most experienced on the board that year,
+                    having stayed as a 3-years members. <br><br>
+                </p>
+            </div>
+            <div class="column_officer">
+                <img src="STEM Pictures/History/2016-2017/officer4.JPG" class="crop_img">
+
+                <h5>
+                    Hubert Tran
+                </h5>
+                <h6>
+                    Activity Chair
+                </h6>
+                <p>
+                    Hubert held the position of activities chair during this year. 
+                    He was a Sophomore at the time and was is one of the most experienced on the board that year, 
+                    having served as an officer for multiple years. <br><br>
+                </p>
+            </div>
+            <div class="column_officer">
+                    <img src="STEM Pictures/History/2016-2017/officer2.JPG" class="crop_img">
+
+                <h5>
+                    Huy Banh  
+                </h5>
+                <h6>
+                    Activity Chair
+               </h6>
+               <p>
+                   Huy held the position of activities chair during this year. 
+                   He was a Sophomore at the time and is known for his impressive accomplishments in the wright turn glider competition. 
+               </p>
+            </div>
+            <div class="column_side" style="background: rgb(52, 209, 196)"></div>
+        </div>
+    </div>
 
 </body>
 </html>

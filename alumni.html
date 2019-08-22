@@ -14,39 +14,75 @@
 </head>
 
 <body>
-    <!--Menu Section-->
-    <div class="header">
-        <img class="header_picture" src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture">
-        <div class="header-right">
-            <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="achievements.html">Achievements</a>
-                <div class="vertical_menu">
-                    <button class="vertical_menu_button">History</button>
-                    <div class="vertical_menu-content">
-                        <a class="active" href="alumni.html">Alumni</a>
-                        <a href="2018-2019.html">2018-2019</a>
-                        <a href="2017-2018.html">2017-2018</a>
-                        <a href="2016-2017.html">2016-2017</a>
-                    </div>
-                </div>
-                <a href="gallery.html">Gallery</a>
-                <a href="code B.html">Code B</a>
-                <div class="vertical_menu">
-                    <button class="vertical_menu_button">Activities</button>
-                    <div class="vertical_menu-content">
-                        <a href="icebreakers.html">Ice Breakers</a>
-                        <a href="game-designs.html">Game Designs</a>
-                        <a href="3D-designs.html">3D Designs</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="vertical_line"></div>
-        <div class="center2"><b>Alumni</b></div>
-        <div class="center"><img style="width:250px" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo"></div>
+  <!--Menu Section-->
+  
+  <!--Side Menu-->
+  <!--adding javascript-->
+  <script src="sideMenu.js"></script>
+      
+  <!--similar concept as the main menu-->
+  <div id="side_menu_id" class="side_menu">
+    <!--application of js-->
+    <a class="close_button" onclick="closeButton()">
+      <span style='font-size:100%'>&#10006;</span>
+    </a>
+    <a class="side_menu_link " href="index.html">News</a>
+    <a class="side_menu_link" href="about.html">About</a>
+    <div class="extra_menu">
+      <a class="extra_menu_button">History</a>
+      <div class="extra_menu_content">
+        <a class="extra_menu_link active" href="alumni.html">Alumni</a>
+        <a class="extra_menu_link" href="2018-2019.html">2018-2019</a>
+        <a class="extra_menu_link" href="2017-2018.html">2017-2018</a>
+        <a class="extra_menu_link" href="2016-2017.html">2016-2017</a>
+      </div>      
     </div>
-    <!--End of Menu section-->
+    <a class="side_menu_link" href="gallery.html">Gallery</a>
+    <a class="side_menu_link" href="code B.html">Code B</a>
+    <div class="extra_menu">
+      <a class="extra_menu_button">Activities</a>
+      <div class="extra_menu_content">
+        <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
+      </div>      
+    </div>
+  </div>
+  
+  <!--Normal Menu-->
+  <div class="header">
+    <img class="header_picture"src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture"> 
+    <div class="header-right">
+      <div class="menu">
+        <a href="index.html">News</a>
+        <a href= "about.html">About</a>
+        <div class="vertical_menu">
+          <button class="vertical_menu_button">History</button>
+          <div class="vertical_menu-content">
+            <a class="active" href="alumni.html">Alumni</a>
+            <a href="2018-2019.html">2018-2019</a>
+            <a href="2017-2018.html">2017-2018</a>
+            <a href="2016-2017.html">2016-2017</a>
+          </div>
+        </div> 
+        <a href="gallery.html">Gallery</a>
+        <a href="code B.html">Code B</a>
+        <div class="vertical_menu">
+          <button class="vertical_menu_button">Activities</button>
+          <div class="vertical_menu-content">
+            <a href="icebreakers.html">Ice Breakers</a>
+          </div>
+        </div> 
+      </div>   
+    </div>
+    <div class="open_button" onclick="openButton()">
+      <div></div>  
+      <div></div>  
+      <div></div>  
+    </div>
+    <div class="vertical_line"></div>
+    <div class="center2"><b>Alumni</b></div>
+    <img class="center" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo">
+  </div>
+  <!--End of Menu section-->
 
     <h3 class="alumni_title">Alumni Message</h3>
     <p class="alumni_description">
@@ -75,7 +111,6 @@
     <hr class="line">
     <div class="row">
         <div class="column_space"></div>
-
         <div class="column_pic">
             <h1>Danny Vo</h1>
             <img src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p280x280/67905025_362228251123140_8469353930625646592_n.png?_nc_cat=104&_nc_oc=AQm2rJHGS5LERjOzqA0XApKU4wAIcpSpXeLFEU4XxHu3zQwq3TYNsdzc0Diw1ZQE19TBR3IGCe2dPjDcrU9DdXZw&_nc_ad=z-m&_nc_cid=0&_nc_zor=9&_nc_ht=scontent.xx&oh=aa7d4d3418cc62ae70448d594611c78c&oe=5DD13EF2"

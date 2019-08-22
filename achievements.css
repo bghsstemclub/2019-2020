@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Futurabook;
+    src: url("fonts/Futura Book font.ttf") format("truetype");
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(103, 222, 226),rgb(39, 146, 233));
+}
+
+.achievements {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    margin: 90px;
+    background-color: white;
+}
+
+.achievements h2,
+h3 {
+    font-size: 300%;
+    text-align: center;
+    color: black;
+
+}
+
+.achievements h2 {
+    margin-bottom: 100px;
+    border-width: 0px 0px 10px 0px;
+    border-style: solid;
+    border-color: rgb(37, 158, 206);
+    padding-bottom: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.achievements h3 {
+
+    font-size: 180%;
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+
+.achievements .featured {
+
+    padding: 0px 0px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 50px;
+    border: solid black 5px;
+}
+
+.achievements img {
+    display: block;
+
+}
+
+.achievements .featured p {
+    color: black;
+    font-size: 120%;
+    line-height: 25px;
+    text-indent: 5%;
+    margin-top: 5px;
+    font-family: Futurabook, sans-serif;
+    padding: 20px;
+
+}
+
+
+.column {
+    column-count: 2;
+    border: black 5px;
+    border-style: solid;
+    max-width: 931x;
+    margin: 30px auto;
+    column-width: 465px;
+    text-align: center;
+    background-color: rgb(197, 212, 214)
+}
+
+
+
+
+.moreinfo {
+    border: none;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(7, 160, 221);
+    width: 70px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px
+}
