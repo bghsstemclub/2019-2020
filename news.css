@@ -75,16 +75,28 @@
     word-wrap: break-word;
 }
 
+h2, h4{
+    font-family: Georgia, 'Times New Roman', Times ;
+}
+
 .column_news_holder {
     width: 70%;
     padding: 10px;
     font-size: 20px;
 }
 
+.column_news_holder h1{
+    font-family: Times, serif;
+}
+
 .column_home1,
 .column_news1 {
     width: 45%;
     opacity: 1;
+}
+
+.column_news1 p{
+    font-family: sans-serif;
 }
 
 .column_news_holder,
@@ -151,7 +163,7 @@
 }
 
 .link_color:hover {
-    text-decoration: underline;
+    color: rgb(179, 179, 179);
 }
 
 
