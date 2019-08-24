@@ -78,6 +78,11 @@
     flex: 8%;
 }
 
+@font-face {
+    font-family: Futurabook;
+    src: url("fonts/Futura Book font.ttf") format("truetype");
+}
+
 h1, h2, h3{
     font-size: 60px;
     text-align: center;
