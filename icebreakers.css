@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Futurabook;
+    src: url("fonts/Futura Book font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Futurabold;
+    src: url("fonts/Futura Extra Black font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: FuturaXBlk;
+    src: url("fonts/Futura XBlk BT.ttf");
+}
+
+@font-face  {
+    font-family: Futuramed;
+    src: url("fonts/futura Heavy font.ttf");
+}
+
+.icebreakers {
+	margin: 30px;
+}
+
+.icebreakers h2 {
+	font-size: 300%;
+	text-align: center;
+	font-family: Futurabold;
+}
+.icebreakers h3 {
+	font-size: 200%;
+	text-align: center;
+	font-family: Futuramed;
+}
+.icebreakers h4 {
+	font-size: 150%;
+	font-family: Futuramed;
+}
+.icebreakers p {
+	font-family: Futurabook;
+	font-size: 150%;
+}
+
+.icebreakers ul {
+	padding: 20px;
+	list-style-type: none;
+	font-family: Futurabook;
+	font-size: 125%;
+	line-height: 1.5em;
+	border-bottom: solid #0caeb9 20px;
+	border-top: solid #0caeb9 20px;
+}
+
+.calender {
+	text-align: center;
+}
