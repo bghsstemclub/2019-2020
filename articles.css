@@ -1,0 +1,32 @@
+body {
+    background: rgb(37, 128, 151);
+}
+
+/*content box in the middle*/
+.content {
+    max-width: 70%;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align: center;
+}
+
+/*changes in the column*/
+.column_news1{
+    font-size: 130%;
+}
+
+.column_news1 p{
+    font-size: 85%;
+}
+
+
+
+
+
+
+

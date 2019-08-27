@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        STEM Club
+    </title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../aesthetic.css">
+    <link rel="stylesheet" href="../articles.css">
+    <link rel="stylesheet" href="../news.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--Menu Section-->
+    
+    <!--Side Menu-->
+    <!--adding javascript-->
+    <script src="sideMenu.js"></script>
+      
+    <!--similar concept as the main menu-->
+    <div id="side_menu_id" class="side_menu">
+        <!--application of js-->
+        <a class="close_button" onclick="closeButton()">
+            <span style='font-size:100%'>&#10006;</span>
+        </a>
+        <a class="side_menu_link  active" href="index.html">News</a>
+        <a class="side_menu_link" href="about.html">About</a>
+        <div class="extra_menu">
+            <div onclick="showingExtraMenu1()" class="extra_menu_button">History</div>
+            <div id="extra_menu_id1" class="extra_menu_content">
+                <a class="extra_menu_link" href="alumni.html">Alumni</a>
+                <a class="extra_menu_link" href="2018-2019.html">2018-2019</a>
+                <a class="extra_menu_link" href="2017-2018.html">2017-2018</a>
+                <a class="extra_menu_link" href="2016-2017.html">2016-2017</a>
+            </div>    
+        </div>  
+        <a class="side_menu_link" href="gallery.html">Gallery</a>
+        <a class="side_menu_link" href="code B.html">Code B</a>
+        <div class="extra_menu">
+            <a onclick="showingExtraMenu2()" class="extra_menu_button">Activities</a>
+            <div id="extra_menu_id2" class="extra_menu_content">
+                <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
+            </div>      
+        </div>
+    </div>
+  
+    <!--Normal Menu-->
+    <div class="header">
+        <img class="header_picture" src="../STEM Pictures/STEM_Header.jpg" alt="STEM_Picture">
+        <div class="header-right">
+            <div class="menu">
+                <a class="active" href="../index.html">News</a>
+                <a href="../about.html">About</a>
+                <div class="vertical_menu">
+                    <button class="vertical_menu_button">History</button>
+                    <div class="vertical_menu-content">
+                        <a href="../alumni.html">Alumni</a>
+                        <a href="../2018-2019.html">2018-2019</a>
+                        <a href="../2017-2018.html">2017-2018</a>
+                        <a href="../2016-2017.html">2016-2017</a>
+                    </div>
+                </div>
+                <a href="../gallery.html">Gallery</a>
+                <a href="../code B.html">Code B</a>
+                <div class="vertical_menu">
+                    <button class="vertical_menu_button">Activities</button>
+                    <div class="vertical_menu-content">
+                        <a href="../icebreakers.html">Ice Breakers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="open_button" onclick="openButton()">
+            <div></div>  
+            <div></div>  
+            <div></div>  
+        </div>
+        <div class="vertical_line"></div>
+        <div class="center2"><b>News</b></div>
+        <img class="center"src="../STEM Pictures/STEM logo1.png" alt="STEM_Logo">
+    </div>
+    <!--End of Menu section-->
+
+    <div class="content">
+        <h1>NEWS AND ANNOUNCMENTS</h1>
+        <hr>
+        <!--First Article-->
+        <div class="row">
+            <!--Description-->
+            <div class="column_news1">
+                <h2 style="margin-top: 10px">STEM Introductory Meeting</h2>
+
+                <p style="font-size: 85%">
+                    STEM Club will be holding its Introductory Meeting on Saturday, 9/14 at 9:00 AM. 
+                    This will cover what STEM is about, what projects or competitions it offers and what you can learn from it.
+                    Furthermore, we are going to have several ice breakers with some giveaways for the winner!
+                </p>
+                <!--link to the article-->
+                <a href="article1.html" target="_self">
+                    <button class="button_news" style="color: black">
+                        read more >>
+                    </button>
+                </a>
+            </div>
+            <!--picture-->
+            <div class="column_news2">
+                <img src="../STEM Pictures/mew_tea.JPG" alt="NEDC 2018-2019">
+            </div>
+        </div>
+        <hr>
+        <!--Second Article-->
+        <div class="row">
+            <!--Description-->
+            <div class="column_news1">
+                <h2>Mew Tea Fundraiser</h2>
+                <p style="font-size: 85%">
+                    Bolsa Grande's STEM Club is back at it with our first fundraiser in the year! 
+                    We're hosting this at Mew Tea on the Saturday (9/7) from 12:00 PM - 11:00 PM, 
+                    so please try your best to come out and support your very own STEM club!     
+                </p>
+                <!--link to the article-->
+                <a href="article2.html" target="_self">
+                    <button class="button_news" style="color: black">
+                        read more >>
+                    </button>
+                </a>
+            </div>
+            <!--picture-->
+            <div class="column_news2">
+                <img src="../STEM Pictures/mew_tea.JPG" alt="NEDC 2018-2019">
+            </div>
+        </div>
+    </div>
+</body>
