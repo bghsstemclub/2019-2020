@@ -1,260 +1,299 @@
 /* Position for the menu*/
+
 .header {
-  overflow: hidden;
-  padding: 0 px;
-  position: relative;
+    overflow: hidden;
+    padding: 0 px;
+    position: relative;
 }
 
-.header-right{
-  float: right;
-  position: absolute;
-  top: 20px;
-  right: 16px;
-} 
+.header-right {
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 16px;
+}
 
 
 /*the main menu*/
+
 .menu {
-  overflow: hidden;
-  background-color: rgba(143, 185, 190, 0.301);  
-  border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(143, 185, 190, 0.301);
+    border-radius: 10px;
+    font-family: Helvetica, sans-serif;
 }
-  
+
 .menu a {
-  float: left;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  border-radius: 10px;
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
 }
+
 
 /*vertical Menu; applied for "history" and "activities" sections*/
+
 .vertical_menu {
-  float: left;
-  overflow: hidden;
+    float: left;
+    overflow: hidden;
 }
+
 
 /*styles for containers of the vertical_menu*/
+
 .vertical_menu .vertical_menu_button {
-  font-size: 20px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-radius: 10px;
 }
+
 
 /*specific details for the vertical_menu*/
+
 .vertical_menu-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9b6;
-  min-width: 120px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 10px;
+    display: none;
+    position: absolute;
+    background-color: rgba(151, 160, 160, 0.301);
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
 }
 
+
 /*details for each sections of the menu*/
+
 .vertical_menu-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 
 /*
   Side Menu effect
 */
-.side_menu{
-  padding-top: 44px;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.719);
-  transition: 0.4s;
-  top: 0;
-  left: 0;
-  overflow-x: hidden; /*Disabling side scroll*/
-  z-index: 3; /*staying on top*/
-  width: 0; /*for js to work*/
-  height: 100%;
+
+.side_menu {
+    padding-top: 44px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.719);
+    transition: 0.4s;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    /*Disabling side scroll*/
+    z-index: 3;
+    /*staying on top*/
+    width: 0;
+    /*for js to work*/
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 /*extra menu within the side menu*/
+
 .extra_menu {
-  position: relative;
-  display: inline-block;
-  width: 200px;
+    position: relative;
+    display: inline-block;
+    width: 200px;
 }
+
 
 /*the link/tab in the side menu*/
-.side_menu .side_menu_link, .extra_menu_button, .extra_menu_link{
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.2s;
-  padding: 8px 8px 8px 32px;
-  border: 8px rgb(37, 148, 199);
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-  border-radius: 5px;
+
+.side_menu .side_menu_link,
+.extra_menu_button,
+.extra_menu_link {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.2s;
+    padding: 8px 8px 8px 32px;
+    border: 8px rgb(37, 148, 199);
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
 }
+
 
 /*content for extra menu*/
-.extra_menu_content{
-  display: none;
+
+.extra_menu_content {
+    display: none;
 }
 
-.extra_menu_link{
-  padding: 8px 8px 8px 52px;
+.extra_menu_link {
+    padding: 8px 8px 8px 52px;
 }
 
-/*close button for side menu*/ 
-.side_menu .close_button{
-  position: absolute;
-  right: 20px;
-  font-size: 36px;
-  margin-left: 50px;
-  top: 0;
-  color: white;
+
+/*close button for side menu*/
+
+.side_menu .close_button {
+    position: absolute;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 50px;
+    top: 0;
+    color: white;
 }
+
 
 /*open button for side menu*/
-.open_button{
-  font-size: 20px;
-  color: white;
-  padding: 8px 15px;
-  top: 2px;
-  left: 2px;
-  background-color: rgba(122, 122, 122, 0.747);
-  cursor: pointer;
-  border: none;
-  visibility: hidden;
-  position: absolute;
-  border-radius: 3px;
+
+.open_button {
+    font-size: 20px;
+    color: white;
+    padding: 8px 15px;
+    top: 2px;
+    left: 2px;
+    background-color: rgba(122, 122, 122, 0.747);
+    cursor: pointer;
+    border: none;
+    visibility: hidden;
+    position: absolute;
+    border-radius: 3px;
 }
 
+
 /*icon for the side menu open button*/
-.open_button > div {
-  width: 25px;
-  height: 4px;
-  background-color: rgb(133, 237, 255);;
-  margin: 5px 0;
-  border-radius: 10px;
+
+.open_button>div {
+    width: 25px;
+    height: 4px;
+    background-color: rgb(133, 237, 255);
+    ;
+    margin: 5px 0;
+    border-radius: 10px;
 }
 
 
 /*HOVER EFFECT*/
+
+
 /*side menu hover effect*/
-.side_menu .side_menu_link:hover{
-  background-color: rgba(192, 192, 192, 0.4);
+
+.side_menu .side_menu_link:hover {
+    background-color: rgba(192, 192, 192, 0.4);
 }
 
-.extra_menu_button:hover, .extra_menu_link:hover {
-  background-color: rgba(192, 192, 192, 0.4);
+.extra_menu_button:hover,
+.extra_menu_link:hover {
+    background-color: rgba(192, 192, 192, 0.4);
 }
 
-.open_button:hover{
-  background-color: rgba(209, 209, 209, 0.671);
+.open_button:hover {
+    background-color: rgba(209, 209, 209, 0.671);
 }
 
-.close_button:hover{
-  color: rgb(209, 209, 209);
+.close_button:hover {
+    color: rgb(209, 209, 209);
 }
 
 .extra_menu:hover .extra_menu_content {
-  display: block;
+    display: block;
 }
+
+
 /*normal menu hover effect*/
-.menu a:hover, .vertical_menu:hover .vertical_menu_button {
-  background-color: rgb(161, 200, 255);
+
+.menu a:hover,
+.vertical_menu:hover .vertical_menu_button {
+    background-color: rgb(161, 200, 255);
 }
-  
+
 .vertical_menu-content a:hover {
-  background-color: #ddd;
+    background-color: rgb(161, 200, 255);
 }
-  
+
 .vertical_menu:hover .vertical_menu-content {
-  display: block;
+    display: block;
 }
 
 
 /*identify the current link/page*/
+
 a.active {
-  background-color: rgb(39, 146, 233);
-  color: white;
-  border-radius: 10px;
+    background-color: rgb(39, 146, 233);
+    color: white;
+    border-radius: 10px;
 }
 
-.side_menu_link.active{
-  background-color: rgb(39, 146, 233);
+.side_menu_link.active {
+    background-color: rgb(39, 146, 233);
 }
 
 
 /*specific headers for every page*/
+
 .center2 {
-  position: absolute;
-  top: 37%;
-  margin-left: 5.3%;
-  margin-right: auto;
-  font-size: 70px;
-  font-family: monospace;
-  color: rgb(255, 255, 255);
-  visibility: visible;
+    position: absolute;
+    top: 37%;
+    margin-left: 5.3%;
+    margin-right: auto;
+    font-size: 70px;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    visibility: visible;
 }
 
+
 /*styles for the logo*/
-.center {   
-  position: absolute;
-  top: 4%;
-  left: 3.2%;
-  font-size: 100px;
-  font-family: monospace;
-  filter: brightness(140%);
-  width: 22%;
+
+.center {
+    position: absolute;
+    top: 4%;
+    left: 3.2%;
+    font-size: 100px;
+    font-family: monospace;
+    filter: brightness(140%);
+    width: 22%;
 }
 
 
 /*changes less than 1000px screen size*/
-@media screen and (max-width: 1000px){
-  .header-right {
-    visibility: hidden;
-  }
 
-  /*side menu button open*/
-  .open_button {
-    visibility: visible;
-  }
-
-  .center2{
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-    margin-left: 0;
-    font-size: 37px;
-  }
-
-  .vertical_line{
-    visibility: hidden;
-  }
-
-  /*logo at the center*/
-  .center {
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    width: 38%;
-  }
+@media screen and (max-width: 1000px) {
+    .header-right {
+        visibility: hidden;
+    }
+    /*side menu button open*/
+    .open_button {
+        visibility: visible;
+    }
+    .center2 {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        margin-left: 0;
+        font-size: 37px;
+    }
+    .vertical_line {
+        visibility: hidden;
+    }
+    /*logo at the center*/
+    .center {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        width: 38%;
+    }
 }
-
