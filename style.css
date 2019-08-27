@@ -122,13 +122,16 @@
     font-size: 25px;
     color: white;
     display: block;
+    -webkit-display: block;
     transition: 0.2s;
+    -webkit-transition: 0.2s;
     padding: 8px 8px 8px 32px;
     border: 8px rgb(37, 148, 199);
     background: none;
     width: 100%;
     text-align: left;
     cursor: pointer;
+    -webkit-cursor: pointer;
     outline: none;
     border-radius: 5px;
 }
@@ -138,10 +141,12 @@
 
 .extra_menu_content {
     display: none;
+    -webkit-display: none;
 }
 
 .extra_menu_link {
     padding: 8px 8px 8px 52px;
+    -webkit-padding: 8px 8px 8px 52px;
 }
 
 
@@ -198,6 +203,7 @@
 .extra_menu_button:hover,
 .extra_menu_link:hover {
     background-color: rgba(192, 192, 192, 0.4);
+    -webkit-background-color: rgba(192, 192, 192, 0.4);
 }
 
 .open_button:hover {
@@ -210,6 +216,7 @@
 
 .extra_menu:hover .extra_menu_content {
     display: block;
+    -webkit-display: block;
 }
 
 

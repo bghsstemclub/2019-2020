@@ -46,7 +46,6 @@ img {
     height: auto;
     border-radius: 10px;
     margin-top: 6px;
-    margin-bottom: 10px;
 }
 
 
@@ -55,7 +54,6 @@ img {
 .img_size {
     position: relative;
     width: 100%;
-    margin: 8px;
 }
 
 
@@ -78,10 +76,6 @@ img {
 
 .fade2 {
     position: absolute;
-    position: absolute;
-    position: absolute;
-    bottom: 0;
-    bottom: 0;
     bottom: 0;
     background: rgb(51, 179, 151);
     background: rgba(51, 179, 151, 0.5);
