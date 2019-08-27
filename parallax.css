@@ -12,8 +12,10 @@
     clear: both;
 }
 
+
 /*Parallax-Layout for box0*/
-.row{
+
+.row {
     display: flex;
     flex-wrap: wrap;
 }
@@ -22,44 +24,45 @@
     box-sizing: border-box;
 }
 
-.column1, .column1_vision{
+.column1,
+.column1_vision {
     float: left;
     flex: 56.6666%;
     padding: 10px;
     word-wrap: break-word;
-    font-size:36px;
+    font-size: 36px;
     text-align: center;
     color: white;
- /*   color: rgb(139, 255, 154);*/
+    /*   color: rgb(139, 255, 154);*/
 }
 
-
-.column2, .column2_vision{
+.column2,
+.column2_vision {
     float: left;
-    flex: 43.33333%;    
+    flex: 43.33333%;
     padding: 15px;
     word-wrap: break-word;
-    font-size:36px;
+    font-size: 36px;
     text-align: left;
     color: white;
 }
 
-.column2 p{
+.column2 p {
     font-size: 70%;
     padding: 34px;
-    font-family: Calibri; 
+    font-family: Calibri;
     margin-top: 0;
 }
 
-.column2_vision{
+.column2_vision {
     padding: 140px 50px;
 }
 
-.column1_vision{
+.column1_vision {
     padding: 70px 50px;
 }
 
-.column_officers{
+.column_officers {
     float: left;
     word-wrap: break-word;
     text-align: center;
@@ -72,8 +75,20 @@
     background-color: white;
 }
 
+.column_association1 {
+    flex: 38%;
+    padding: 10px;
+}
+
+.column_association2 {
+    flex: 62%;
+    padding: 10px;
+}
+
+
 /*adding extra space*/
-.column_side{
+
+.column_side {
     float: left;
     flex: 8%;
 }
@@ -83,7 +98,9 @@
     src: url("fonts/Futura Book font.ttf") format("truetype");
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-size: 60px;
     text-align: center;
     color: white;
@@ -91,38 +108,41 @@ h1, h2, h3{
     margin-bottom: 10px;
 }
 
-h2{
+h2 {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
 
-h3{
+h3 {
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(117, 117, 117);
 }
 
-.column_officers p{
+.column_officers p {
     font-size: 18px;
     font-family: Calibri;
     color: black;
     padding: 10px;
 }
 
-
 @media screen and (max-width: 1000px) {
-    .column1,.column2, .column2_vision, .column1_vision {
+    .column1,
+    .column2,
+    .column2_vision,
+    .column1_vision,
+    .column_association1,
+    .column_association2 {
         flex: 100%;
         text-align: center;
         font-size: 30px;
     }
-
-    .column1_vision, .column2_vision{
+    .column1_vision,
+    .column2_vision {
         padding: 30px 50px;
     }
-
-    .column_officers{
+    .column_officers {
         flex: 88%;
         margin: 6% 6% 0 6%;
     }
@@ -141,7 +161,6 @@ h3{
     background-size: cover;
 }
 
-
 .box2 {
     /*the background image*/
     background-image: url("STEM Pictures/Achievements/Achievement1.jpg");
@@ -153,9 +172,9 @@ h3{
     background-position: center;
     display: table;
     background-size: cover;
- }
- 
- .box3 {
+}
+
+.box3 {
     /*the background image*/
     background-image: url("STEM Pictures/STEM4.jpg");
     /*Set a height*/
@@ -164,7 +183,15 @@ h3{
     /*parallax scrolling effect*/
     background-attachment: fixed;
     background-position: center;
-    display:table;
+    display: table;
     background-size: cover;
- }
+}
 
+@media only screen and (max-width: 1000px) {
+    .box3,
+    .box2,
+    .box1 {
+        background-attachment: scroll;
+        height: 280px;
+    }
+}
