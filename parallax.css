@@ -146,9 +146,8 @@ h3 {
         flex: 88%;
         margin: 6% 6% 0 6%;
     }
-    .column2_vision h1,
-    .column2 h1 {
-        font-size: 40px;
+    h1 {
+        font-size: 38px;
     }
     .column1_vision p {
         font-size: 24px;
