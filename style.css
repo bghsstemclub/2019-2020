@@ -110,6 +110,9 @@
     position: relative;
     display: inline-block;
     width: 200px;
+    -webkit-position: relative;
+    -webkit-display: inline-block;
+    -webkit-width: 200px;
 }
 
 
