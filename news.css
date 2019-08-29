@@ -10,13 +10,13 @@
 .crop {
     width: 100%;
     height: 500px;
+    margin-top: -150px;
     overflow: hidden;
 }
 
 .crop>img {
     width: 100%;
     height: auto;
-    margin-top: -30px
 }
 
 
@@ -75,8 +75,9 @@
     word-wrap: break-word;
 }
 
-h2, h4{
-    font-family: Georgia, 'Times New Roman', Times ;
+h2,
+h4 {
+    font-family: Georgia, 'Times New Roman', Times;
 }
 
 .column_news_holder {
@@ -85,7 +86,7 @@ h2, h4{
     font-size: 20px;
 }
 
-.column_news_holder h1{
+.column_news_holder h1 {
     font-family: Times, serif;
 }
 
@@ -95,7 +96,7 @@ h2, h4{
     opacity: 1;
 }
 
-.column_news1 p{
+.column_news1 p {
     font-family: sans-serif;
 }
 
