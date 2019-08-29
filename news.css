@@ -10,13 +10,13 @@
 .crop {
     width: 100%;
     height: 500px;
-    margin-top: -150px;
     overflow: hidden;
 }
 
 .crop>img {
     width: 100%;
     height: auto;
+    margin-top: -30px;
 }
 
 
@@ -169,6 +169,12 @@ h4 {
 
 
 /*responsiveness*/
+
+@media screen and (min-width: 1500px) {
+    .crop>img {
+        margin-top: -150px;
+    }
+}
 
 @media screen and (max-width: 1000px) {
     .crop {
