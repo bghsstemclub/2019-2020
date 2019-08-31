@@ -5,22 +5,22 @@ var slide = [];
 slide[0] = 'STEM Pictures/STEM4.jpg';
 slide[1] = 'STEM Pictures/Achievements/Achievement1.jpg';
 slide[2] = 'STEM Pictures/Achievements/Achievement4.jpg';
-slide[3] = 'STEM Pictures/Achievements/Achievement3.JPG'; 
+slide[3] = 'STEM Pictures/Achievements/Achievement3.JPG';
 
 //function to change slide
-function changeSlides(){
+function changeSlides() {
     document.slideShow.src = slide[i];
 
     //check to see if this is the last image. image.length has to minus one since the image start with 0
-    if(i < slide.length - 1){
+    if (i < slide.length - 1) {
         i++;
     }
     //if it's at the last image, set the index value to 0
-    else{
+    else {
         i = 0;
     }
     //caption changes
-    switch(i){
+    switch (i) {
         case 1:
             document.getElementById("fade3").innerHTML = "MESA NEDC Competition: 3rd Place(2018-2019 State) Huy Banh, Minh Duong, David Chuong, Khanh Nguyen";
             break;
