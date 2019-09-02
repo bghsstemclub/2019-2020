@@ -188,7 +188,6 @@
     width: 25px;
     height: 4px;
     background-color: rgb(133, 237, 255);
-    ;
     margin: 5px 0;
     border-radius: 10px;
 }
@@ -217,9 +216,8 @@
     color: rgb(209, 209, 209);
 }
 
-.extra_menu:hover .extra_menu_content {
+.show {
     display: block;
-    -webkit-display: block;
 }
 
 

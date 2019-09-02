@@ -16,78 +16,78 @@
 
 <body>
 
-  <!--menu Section-->
-  
-  <!--Side Menu-->
-  <!--adding javascript-->
-  <script src="sideMenu.js"></script>
-      
-  <!--similar concept as the main menu-->
-  <div id="side_menu_id" class="side_menu">
-    <!--application of js-->
-    <a class="close_button" onclick="closeButton()">
-      <span style='font-size:100%'>&#10006;</span>
-    </a>
-    <a class="side_menu_link" href="index.html">Home</a>
-    <a class="side_menu_link active" href="achievements.html">Achievements</a>
-    <div class="extra_menu">
-      <a class="extra_menu_button">History</a>
-      <div class="extra_menu_content">
-        <a class="extra_menu_link" href="alumni.html">Alumni</a>
-        <a class="extra_menu_link" href="2018-2019.html">2018-2019</a>
-        <a class="extra_menu_link" href="2017-2018.html">2017-2018</a>
-        <a class="extra_menu_link" href="2016-2017.html">2016-2017</a>
-      </div>      
+    <!--menu Section-->
+
+    <!--Side Menu-->
+    <!--adding javascript-->
+    <script src="sideMenu.js"></script>
+
+    <!--similar concept as the main menu-->
+    <div id="side_menu_id" class="side_menu">
+        <!--application of js-->
+        <a class="close_button" onclick="closeButton()">
+            <span style='font-size:100%'>&#10006;</span>
+        </a>
+        <a class="side_menu_link" href="index.html">Home</a>
+        <a class="side_menu_link active" href="achievements.html">Achievements</a>
+        <div class="extra_menu">
+            <a onclick="extraMenu1()" class="extra_menu_button">History</a>
+            <div id="extra_menu_content_id1" class="extra_menu_content">
+                <a class="extra_menu_link" href="alumni.html">Alumni</a>
+                <a class="extra_menu_link" href="2018-2019.html">2018-2019</a>
+                <a class="extra_menu_link" href="2017-2018.html">2017-2018</a>
+                <a class="extra_menu_link" href="2016-2017.html">2016-2017</a>
+            </div>
+        </div>
+        <a class="side_menu_link" href="news.html">News</a>
+        <a class="side_menu_link" href="gallery.html">Gallery</a>
+        <a class="side_menu_link" href="code B.html">Code B</a>
+        <div class="extra_menu">
+            <a onclick="extraMenu2()" class="extra_menu_button">Activities</a>
+            <div id="extra_menu_content_id2" class="extra_menu_content">
+                <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
+            </div>
+        </div>
     </div>
-    <a class="side_menu_link" href="news.html">News</a>
-    <a class="side_menu_link" href="gallery.html">Gallery</a>
-    <a class="side_menu_link" href="code B.html">Code B</a>
-    <div class="extra_menu">
-      <a class="extra_menu_button">Activities</a>
-      <div class="extra_menu_content">
-        <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
-      </div>      
+
+    <!--Normal Menu-->
+    <div class="header">
+        <img class="header_picture" src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture">
+        <div class="header-right">
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a class="active" href="achievements.html">Achievements</a>
+                <div class="vertical_menu">
+                    <button class="vertical_menu_button">History</button>
+                    <div class="vertical_menu-content">
+                        <a href="alumni.html">Alumni</a>
+                        <a href="2018-2019.html">2018-2019</a>
+                        <a href="2017-2018.html">2017-2018</a>
+                        <a href="2016-2017.html">2016-2017</a>
+                    </div>
+                </div>
+                <a href="news.html">News</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="code B.html">Code B</a>
+                <div class="vertical_menu">
+                    <button class="vertical_menu_button">Activities</button>
+                    <div class="vertical_menu-content">
+                        <a href="icebreakers.html">Ice Breakers</a>
+                        <a href="3D-designs.html">3D Designs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="open_button" onclick="openButton()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="vertical_line"></div>
+        <div class="center2"><b>Achievements</b></div>
+        <img class="center" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo">
     </div>
-  </div>
-  
-  <!--Normal Menu-->
-  <div class="header">
-    <img class="header_picture"src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture"> 
-    <div class="header-right">
-      <div class="menu">
-        <a href="index.html">Home</a>
-        <a class="active" href="achievements.html">Achievements</a>
-        <div class="vertical_menu">
-          <button class="vertical_menu_button">History</button>
-          <div class="vertical_menu-content">
-            <a href="alumni.html">Alumni</a>
-            <a href="2018-2019.html">2018-2019</a>
-            <a href="2017-2018.html">2017-2018</a>
-            <a href="2016-2017.html">2016-2017</a>
-          </div>
-        </div> 
-        <a href= "news.html">News</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="code B.html">Code B</a>
-        <div class="vertical_menu">
-          <button class="vertical_menu_button">Activities</button>
-          <div class="vertical_menu-content">
-            <a href="icebreakers.html">Ice Breakers</a>
-            <a href="3D-designs.html">3D Designs</a>
-          </div>
-        </div> 
-      </div>   
-    </div>
-    <div class="open_button" onclick="openButton()">
-      <div></div>  
-      <div></div>  
-      <div></div>  
-    </div>
-    <div class="vertical_line"></div>
-    <div class="center2"><b>Achievements</b></div>
-    <img class="center" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo">
-  </div>
-  <!--End of Menu section-->
+    <!--End of Menu section-->
 
 
     <div class="achievements">
@@ -173,4 +173,6 @@
     </div>
 
 
-</body></html>
+</body>
+
+</html>
