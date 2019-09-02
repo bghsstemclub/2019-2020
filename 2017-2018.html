@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html> 
+<html>
 
 <head>
     <title>
@@ -16,76 +15,76 @@
 </head>
 
 <body>
-  <!--Menu Section-->
-    
-  <!--Side Menu-->
-  <!--adding javascript-->
-  <script src="sideMenu.js"></script>
-      
-  <!--similar concept as the main menu-->
-  <div id="side_menu_id" class="side_menu">
-    <!--application of js-->
-    <a class="close_button" onclick="closeButton()">
-      <span style='font-size:100%'>&#10006;</span>
-    </a>
-    <a class="side_menu_link" href="index.html">News</a>
-    <a class="side_menu_link" href="about.html">About</a>
-    <div class="extra_menu">
-      <a class="extra_menu_button">History</a>
-      <div class="extra_menu_content">
-        <a class="extra_menu_link" href="alumni.html">Alumni</a>
-        <a class="extra_menu_link" href="2018-2019.html">2018-2019</a>
-        <a class="extra_menu_link active" href="2017-2018.html">2017-2018</a>
-        <a class="extra_menu_link" href="2016-2017.html">2016-2017</a>
-      </div>      
-    </div>
-    <a class="side_menu_link" href="gallery.html">Gallery</a>
-    <a class="side_menu_link" href="code B.html">Code B</a>
-    <div class="extra_menu">
-      <a class="extra_menu_button">Activities</a>
-      <div class="extra_menu_content">
-        <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
-      </div>      
-    </div>
-  </div>
-  
-  <!--Normal Menu-->
-  <div class="header">
-    <img class="header_picture"src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture">
-    <div class="header-right">
-      <div class="menu">
-        <a href="index.html">Home</a>
-        <a href= "about.html">about</a>
-        <div class="vertical_menu">
-          <button class="vertical_menu_button">History</button>
-          <div class="vertical_menu-content">
-            <a href="alumni.html">Alumni</a>
-            <a href="2018-2019.html">2018-2019</a>
-            <a class="active" href="2017-2018.html">2017-2018</a>
-            <a href="2016-2017.html">2016-2017</a>
-          </div>
+    <!--Menu Section-->
 
-        </div> 
-        <a href="gallery.html">Gallery</a>
-        <a href="code B.html">Code B</a>
-        <div class="vertical_menu">
-          <button class="vertical_menu_button">Activities</button>
-          <div class="vertical_menu-content">
-            <a href="icebreakers.html">Ice Breakers</a>
-          </div>
+    <!--Side Menu-->
+    <!--adding javascript-->
+    <script src="sideMenu.js"></script>
+
+    <!--similar concept as the main menu-->
+    <div id="side_menu_id" class="side_menu">
+        <!--application of js-->
+        <a class="close_button" onclick="closeButton()">
+            <span style='font-size:100%'>&#10006;</span>
+        </a>
+        <a class="side_menu_link" href="index.html">News</a>
+        <a class="side_menu_link" href="about.html">About</a>
+        <div class="extra_menu">
+            <a onclick="extraMenu1()" class="extra_menu_button">History</a>
+            <div id="extra_menu_content_id1" class="extra_menu_content">
+                <a class="extra_menu_link" href="alumni.html">Alumni</a>
+                <a class="extra_menu_link" href="2018-2019.html">2018-2019</a>
+                <a class="extra_menu_link active" href="2017-2018.html">2017-2018</a>
+                <a class="extra_menu_link" href="2016-2017.html">2016-2017</a>
+            </div>
         </div>
-      </div>
+        <a class="side_menu_link" href="gallery.html">Gallery</a>
+        <a class="side_menu_link" href="code B.html">Code B</a>
+        <div class="extra_menu">
+            <a onclick="extraMenu2()" class="extra_menu_button">Activities</a>
+            <div id="extra_menu_content_id2" class="extra_menu_content">
+                <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
+            </div>
+        </div>
     </div>
-    <div class="open_button" onclick="openButton()">
-      <div></div>  
-      <div></div>  
-      <div></div>  
+
+    <!--Normal Menu-->
+    <div class="header">
+        <img class="header_picture" src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture">
+        <div class="header-right">
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">about</a>
+                <div class="vertical_menu">
+                    <button class="vertical_menu_button">History</button>
+                    <div class="vertical_menu-content">
+                        <a href="alumni.html">Alumni</a>
+                        <a href="2018-2019.html">2018-2019</a>
+                        <a class="active" href="2017-2018.html">2017-2018</a>
+                        <a href="2016-2017.html">2016-2017</a>
+                    </div>
+
+                </div>
+                <a href="gallery.html">Gallery</a>
+                <a href="code B.html">Code B</a>
+                <div class="vertical_menu">
+                    <button class="vertical_menu_button">Activities</button>
+                    <div class="vertical_menu-content">
+                        <a href="icebreakers.html">Ice Breakers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="open_button" onclick="openButton()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="vertical_line"></div>
+        <div class="center2"><b>2017-2018</b></div>
+        <img class="center" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo">
     </div>
-    <div class="vertical_line"></div>
-    <div class="center2"><b>2017-2018</b></div>
-    <img class="center" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo">
-  </div>
-  <!--End of Menu section-->
+    <!--End of Menu section-->
 
     <!--Beginning of main page-->
     <div class="main">
@@ -136,15 +135,14 @@
             <div class="achievements">
                 <h3 class="jumpmargin" id="Achievements">Achievements</h3>
                 <p>
-                    2017-2018 was a very successful year for BGHS's STEM Club. STEM achieved great achievements during the Mesa Day competition.
-                    Some notable achievements are:
+                    2017-2018 was a very successful year for BGHS's STEM Club. STEM achieved great achievements during the Mesa Day competition. Some notable achievements are:
                 </p>
 
                 <div class="img_text">
                     <img src="STEM%20Pictures/Achievements/1718/n16.jpg">
                     <p style="top: 90%">2nd Place NEDC National Competition- David Chuong, Duy Pham, and Danny Vo</p>
                 </div>
-                
+
                 <ul>
                     <li>1st place 9/10th grade Civil Structures Regionals - Charlene Tran</li>
                     <li>3rd place 11/12th grade Civil Structures Regionals - Hubert Tran and Huy Banh</li>
@@ -152,7 +150,7 @@
                     <li>2nd place 9/10th Grade Wright Turn Glider Regionals - Evan Botros, Hector Flores, Quan Khong</li>
                     <li>1st place 11/12th Wright Turn Glider Regionals - Huy Banh, Joaquin Lopez, Patrick Nguyen</li>
                 </ul>
-               
+
             </div>
 
             <!--Beginning of officer section-->
@@ -167,7 +165,8 @@
                     <h3>David Chuong</h3>
                     <div class="border">
                         <img src="STEM%20Pictures/2017-2018/David.jpg">
-                        <p> David held the position of President during this year. He was a Junior at the time and had been in STEM for his entire highschool career. He participated in NEDC for 3 years where he made it to regionals, state, and even national competitions.
+                        <p> David held the position of President during this year. He was a Junior at the time and had been in STEM for his entire highschool career. He participated in NEDC for 3 years where he made it to regionals, state, and even national
+                            competitions.
                         </p>
                     </div>
                 </div>
@@ -176,8 +175,13 @@
                     <h3>Joanne Duong</h3>
                     <div class="border">
                         <img src="STEM%20Pictures/2017-2018/Joanne.jpg">
+<<<<<<< HEAD
                         <p> Joanne held the position of Vice president during this year. She was a Senior at the time and was one of the most experienced on the board that year, been an officer the previous year as well as a STEM member for her fourth year. 
 .
+=======
+                        <p> Joanne held the position of Vice=president during this year. She was a Senior at the time and was one of the most experienced on the board that year, been an officer the previous year as well as a STEM member for her fourth year.
+                            .
+>>>>>>> master
                         </p>
                     </div>
                 </div>
@@ -214,7 +218,8 @@
                     <h3>Hubert Tran</h3>
                     <div class="border">
                         <img src="STEM%20Pictures/2018-2019/Hubert.jpg">
-                        <p> Hubert held the position of activities chair during this year. He was a junior at the time and was is one of the most experienced on the board that year, having served as an officer for multiple years as well as being in STEM since his Freshman year.
+                        <p> Hubert held the position of activities chair during this year. He was a junior at the time and was is one of the most experienced on the board that year, having served as an officer for multiple years as well as being in STEM since
+                            his Freshman year.
 
                         </p>
                     </div>
@@ -236,4 +241,6 @@
     </div>
 
 
-</body></html>
+</body>
+
+</html>
