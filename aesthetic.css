@@ -106,6 +106,43 @@ img {
 }
 
 
+/*footer Section*/
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgb(0, 54, 75), rgb(0, 31, 46));
+}
+
+.footer h1 {
+    font-size: 25px;
+    font-weight: 150;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 5px;
+}
+
+.footer .header {
+    width: 25%;
+    display: block;
+    left: 50%;
+    padding: 0;
+    margin-bottom: 10px;
+    transform: translate(-50%);
+}
+
+.logo {
+    width: 4%;
+    height: auto;
+    margin: 0px 5px;
+    position: relative;
+}
+
+
 /*hover effects for the fade pictures*/
 
 .img_size:hover .fade {
@@ -114,6 +151,10 @@ img {
 
 .img_size:hover .fade2 {
     opacity: 1;
+}
+
+.logo:hover {
+    opacity: 0.7;
 }
 
 
