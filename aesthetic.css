@@ -136,7 +136,7 @@ img {
 }
 
 .logo {
-    width: 4%;
+    width: 49px;
     height: auto;
     margin: 0px 5px;
     position: relative;
@@ -163,5 +163,11 @@ img {
 @media screen and (max-width: 1000px) {
     .center3 {
         font-size: 25px;
+    }
+    .footer .header {
+        width: 60%;
+    }
+    .footer h1 {
+        font-size: 17px;
     }
 }
