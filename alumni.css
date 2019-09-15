@@ -78,7 +78,8 @@ blockquote p.quote2:after {
     font-weight: bold;
     vertical-align: top;
     position: absolute;
-    line-height: 0.8
+    line-height: 0.8;
+    right: 4px;
 }
 
 blockquote p.quote1:before {
@@ -126,6 +127,9 @@ blockquote {
         margin-left: 4%;
         margin-right: 4%;
         border-radius: 2px;
+    }
+    blockquote {
+        margin: 3%;
     }
     .column_space {
         flex: 0;

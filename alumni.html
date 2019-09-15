@@ -14,79 +14,79 @@
 </head>
 
 <body>
-  <!--Menu Section-->
-  
-  <!--Side Menu-->
-  <!--adding javascript-->
-  <script src="sideMenu.js"></script>
-      
-  <!--similar concept as the main menu-->
-  <div id="side_menu_id" class="side_menu">
-    <!--application of js-->
-    <a class="close_button" onclick="closeButton()">
-      <span style='font-size:100%'>&#10006;</span>
-    </a>
-    <a class="side_menu_link " href="index.html">News</a>
-    <a class="side_menu_link" href="about.html">About</a>
-    <div class="extra_menu">
-      <a class="extra_menu_button">History</a>
-      <div class="extra_menu_content">
-        <a class="extra_menu_link active" href="alumni.html">Alumni</a>
-        <a class="extra_menu_link" href="2018-2019.html">2018-2019</a>
-        <a class="extra_menu_link" href="2017-2018.html">2017-2018</a>
-        <a class="extra_menu_link" href="2016-2017.html">2016-2017</a>
-      </div>      
+    <!--Menu Section-->
+
+    <!--Side Menu-->
+    <!--adding javascript-->
+    <script src="sideMenu.js"></script>
+
+    <!--similar concept as the main menu-->
+    <div id="side_menu_id" class="side_menu">
+        <!--application of js-->
+        <a class="close_button" onclick="closeButton()">
+            <span style='font-size:100%'>&#10006;</span>
+        </a>
+        <a class="side_menu_link " href="index.html">News</a>
+        <a class="side_menu_link" href="about.html">About</a>
+        <div class="extra_menu">
+            <a onclick="extraMenu1()" class="extra_menu_button">History</a>
+            <div id="extra_menu_content_id1" class="extra_menu_content">
+                <a class="extra_menu_link active" href="alumni.html">Alumni</a>
+                <a class="extra_menu_link" href="2018-2019.html">2018-2019</a>
+                <a class="extra_menu_link" href="2017-2018.html">2017-2018</a>
+                <a class="extra_menu_link" href="2016-2017.html">2016-2017</a>
+            </div>
+        </div>
+        <a class="side_menu_link" href="gallery.html">Gallery</a>
+        <a class="side_menu_link" href="code B.html">Code B</a>
+        <div class="extra_menu">
+            <a onclick="extraMenu2()" class="extra_menu_button">Activities</a>
+            <div id="extra_menu_content_id2" class="extra_menu_content">
+                <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
+            </div>
+        </div>
     </div>
-    <a class="side_menu_link" href="gallery.html">Gallery</a>
-    <a class="side_menu_link" href="code B.html">Code B</a>
-    <div class="extra_menu">
-      <a class="extra_menu_button">Activities</a>
-      <div class="extra_menu_content">
-        <a class="extra_menu_link" href="icebreakers.html">Icebreakers</a>
-      </div>      
+
+    <!--Normal Menu-->
+    <div class="header">
+        <img class="header_picture" src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture">
+        <div class="header-right">
+            <div class="menu">
+                <a href="index.html">News</a>
+                <a href="about.html">About</a>
+                <div class="vertical_menu">
+                    <button class="vertical_menu_button">History</button>
+                    <div class="vertical_menu-content">
+                        <a class="active" href="alumni.html">Alumni</a>
+                        <a href="2018-2019.html">2018-2019</a>
+                        <a href="2017-2018.html">2017-2018</a>
+                        <a href="2016-2017.html">2016-2017</a>
+                    </div>
+                </div>
+                <a href="gallery.html">Gallery</a>
+                <a href="code B.html">Code B</a>
+                <div class="vertical_menu">
+                    <button class="vertical_menu_button">Activities</button>
+                    <div class="vertical_menu-content">
+                        <a href="icebreakers.html">Ice Breakers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="open_button" onclick="openButton()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="vertical_line"></div>
+        <div class="center2"><b>Alumni</b></div>
+        <img class="center" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo">
     </div>
-  </div>
-  
-  <!--Normal Menu-->
-  <div class="header">
-    <img class="header_picture"src="STEM Pictures/STEM_Header.jpg" alt="STEM_Picture"> 
-    <div class="header-right">
-      <div class="menu">
-        <a href="index.html">News</a>
-        <a href= "about.html">About</a>
-        <div class="vertical_menu">
-          <button class="vertical_menu_button">History</button>
-          <div class="vertical_menu-content">
-            <a class="active" href="alumni.html">Alumni</a>
-            <a href="2018-2019.html">2018-2019</a>
-            <a href="2017-2018.html">2017-2018</a>
-            <a href="2016-2017.html">2016-2017</a>
-          </div>
-        </div> 
-        <a href="gallery.html">Gallery</a>
-        <a href="code B.html">Code B</a>
-        <div class="vertical_menu">
-          <button class="vertical_menu_button">Activities</button>
-          <div class="vertical_menu-content">
-            <a href="icebreakers.html">Ice Breakers</a>
-          </div>
-        </div> 
-      </div>   
-    </div>
-    <div class="open_button" onclick="openButton()">
-      <div></div>  
-      <div></div>  
-      <div></div>  
-    </div>
-    <div class="vertical_line"></div>
-    <div class="center2"><b>Alumni</b></div>
-    <img class="center" src="STEM Pictures/STEM logo1.png" alt="STEM_Logo">
-  </div>
-  <!--End of Menu section-->
+    <!--End of Menu section-->
 
     <h3 class="alumni_title">Alumni Message</h3>
     <p class="alumni_description">
-        The following are profiles of BGHS STEM Alumni who are actively engaged leaders in their communities and fields of study. Whether they've become engineer, scientists, artists, doctocs they will always be STEMatadors!
+        The following are profiles of BGHS STEM Alumni who are active, engaged leaders in their communities and fields of study. Whether they've become engineers, scientists, artists, doctocs they will always be STEMatadors!
     </p>
     <div class="row">
         <div class="column_space"></div>
@@ -96,7 +96,7 @@
                 alt="Julian Vu">
         </div>
         <div class="column_description">
-            <h2>Master’s student at Georgia Tech in Computer Science</h2>
+            <h2>Master’s student at Georgia Institute of Technology in Computer Science</h2>
             <blockquote>
                 <p class="quote1"></p>
                 <p>
@@ -117,7 +117,7 @@
                 alt="Danny Vo">
         </div>
         <div class="column_description">
-            <h2>Bachelor's Student at University of California San Diego in Computer Engineer</h2>
+            <h2>Bachelor's student at University of California San Diego in Computer Engineering</h2>
             <blockquote>
                 <p class="quote1"> </p>
                 <p>
@@ -139,11 +139,11 @@
                 alt="David Chuong">
         </div>
         <div class="column_description">
-            <h2>Bachelor's Student at John Hopkins University in Electrical Engineer</h2>
+            <h2>Bachelor's student at John Hopkins University in Electrical Engineering</h2>
             <blockquote>
                 <p class="quote1"></p>
                 <p>
-                    To all incoming stem members: Welcome to the club! If you are here, you most likely have some sort of interest, or perhaps passion, for a science or engineering related field. I’m here to tell you that your journey towards exploring this interest or passion
+                    To all incoming STEM members: Welcome to the club! If you are here, you most likely have some sort of interest, or perhaps passion, for a science or engineering related field. I’m here to tell you that your journey towards exploring this interest or passion
                     will result in obstacles. You might want to quit because you’re bored, you find your project too difficult, or you are facing challenges working with a team—I’ve been through it all. But trust me on this one, and persevere all the
                     way to the end, because even if you don’t win, the experience will be absolutely worth it.
                 </p>
@@ -151,6 +151,16 @@
             </blockquote>
         </div>
         <div class="column_space"></div>
+    </div>
+    <div class="footer">
+        <img class="header" src="STEM Pictures/STEM logo1.png">
+        <h1>Bolsa Grande High School</h1>
+        <a href="https://www.instagram.com/bghs_stem_club/">
+            <img class="logo" src="STEM Pictures/ig_logo.png">
+        </a>
+        <a href="https://www.facebook.com/groups/bghsstem/">
+            <img class="logo" style="width: 4.1%" src="STEM Pictures/fb_logo.png">
+        </a>
     </div>
 </body>
 

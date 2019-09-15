@@ -1,112 +1,167 @@
 /*general effect for any content being putted on the body*/
-body{
-  margin: 0px;
-  padding: 0px;
+
+body {
+    margin: 0px;
+    padding: 0px;
 }
 
-.crop{
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
+.crop {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
 }
 
 .header_picture {
-  filter: blur(2.3px) brightness(90%);
-  width: 100%;
-  height: auto;
-  position: relative;
+    filter: blur(2.3px) brightness(90%);
+    width: 100%;
+    height: auto;
+    position: relative;
 }
+
 
 /* the headers mark up for every page*/
 
+
 /*a cool-looking vertical line*/
+
 .vertical_line {
-  border-left: 4px solid rgba(130, 236, 255, 0.925);
-  height: 60px;
-  position: absolute;
-  top: 40%;
-  left: 3.5%;
+    border-left: 4px solid rgba(130, 236, 255, 0.925);
+    height: 60px;
+    position: absolute;
+    top: 40%;
+    left: 3.5%;
 }
 
-img{
-  height: auto;
-  width: 100%;
+img {
+    height: auto;
+    width: 100%;
 }
+
 
 /*responsive images*/
-.img_within{
-  display:block;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-top: 6px;
-  margin-bottom: 10px;
+
+.img_within {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 6px;
 }
+
 
 /*image size for "WHAT WE DO"*/
+
 .img_size {
-  position: relative;
-  width: 100%;
-  margin: 8px;
+    position: relative;
+    width: 100%;
 }
+
 
 /*fade aspects*/
+
 .fade {
-  position: absolute;
-  padding: 3px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width:100%;
-  opacity: 0;
-  border-radius: 10px;
-  transition: -5s ease;
-  background-color: rgba(51, 179, 151, 0.5);
+    position: absolute;
+    padding: 3px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 10px;
+    transition: -5s ease;
+    background-color: rgba(51, 179, 151, 0.5);
 }
 
-.fade2{
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(51, 179, 151);
-  background: rgba(51, 179, 151, 0.5);
-  color: rgb(255,255,255);
-  width: 100%;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 15px;
-  text-align: center;
-  transition: -5s ease;
-  border-radius: 10px;
-
+.fade2 {
+    position: absolute;
+    bottom: 0;
+    background: rgb(51, 179, 151);
+    background: rgba(51, 179, 151, 0.5);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    transition: -5s ease;
+    border-radius: 10px;
 }
+
+
 /*headers for those fade pictures*/
+
 .center3 {
-  color: white;
-  font-size: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
+
+
+/*footer Section*/
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgb(0, 54, 75), rgb(0, 31, 46));
+}
+
+.footer h1 {
+    font-size: 25px;
+    font-weight: 150;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 5px;
+}
+
+.footer .header {
+    width: 25%;
+    display: block;
+    left: 50%;
+    padding: 0;
+    margin-bottom: 10px;
+    transform: translate(-50%);
+}
+
+.logo {
+    width: 4%;
+    height: auto;
+    margin: 0px 5px;
+    position: relative;
+}
+
 
 /*hover effects for the fade pictures*/
-.img_size:hover .fade{
-  opacity: 1;
+
+.img_size:hover .fade {
+    opacity: 1;
 }
 
-.img_size:hover .fade2{
-  opacity: 1;
+.img_size:hover .fade2 {
+    opacity: 1;
 }
-  /*end of fade aspect*/
+
+.logo:hover {
+    opacity: 0.7;
+}
+
+
+/*end of fade aspect*/
 
 @media screen and (max-width: 1000px) {
-  .center3{
-    font-size: 25px;
-  }
+    .center3 {
+        font-size: 25px;
+    }
 }

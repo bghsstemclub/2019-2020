@@ -110,6 +110,9 @@
     position: relative;
     display: inline-block;
     width: 200px;
+    -webkit-position: relative;
+    -webkit-display: inline-block;
+    -webkit-width: 200px;
 }
 
 
@@ -122,13 +125,16 @@
     font-size: 25px;
     color: white;
     display: block;
+    -webkit-display: block;
     transition: 0.2s;
+    -webkit-transition: 0.2s;
     padding: 8px 8px 8px 32px;
     border: 8px rgb(37, 148, 199);
     background: none;
     width: 100%;
     text-align: left;
     cursor: pointer;
+    -webkit-cursor: pointer;
     outline: none;
     border-radius: 5px;
 }
@@ -138,10 +144,12 @@
 
 .extra_menu_content {
     display: none;
+    -webkit-display: none;
 }
 
 .extra_menu_link {
     padding: 8px 8px 8px 52px;
+    -webkit-padding: 8px 8px 8px 52px;
 }
 
 
@@ -180,7 +188,6 @@
     width: 25px;
     height: 4px;
     background-color: rgb(133, 237, 255);
-    ;
     margin: 5px 0;
     border-radius: 10px;
 }
@@ -198,6 +205,7 @@
 .extra_menu_button:hover,
 .extra_menu_link:hover {
     background-color: rgba(192, 192, 192, 0.4);
+    -webkit-background-color: rgba(192, 192, 192, 0.4);
 }
 
 .open_button:hover {
@@ -208,7 +216,7 @@
     color: rgb(209, 209, 209);
 }
 
-.extra_menu:hover .extra_menu_content {
+.show {
     display: block;
 }
 
@@ -284,7 +292,7 @@ a.active {
         left: 50%;
         transform: translate(-50%, -30%);
         margin-left: 0;
-        font-size: 37px;
+        font-size: 28px;
     }
     .vertical_line {
         visibility: hidden;
