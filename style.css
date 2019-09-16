@@ -95,7 +95,7 @@
     left: 0;
     overflow-x: hidden;
     /*Disabling side scroll*/
-    z-index: 3;
+    z-index: 5;
     /*staying on top*/
     width: 0;
     /*for js to work*/
@@ -177,8 +177,9 @@
     cursor: pointer;
     border: none;
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     border-radius: 3px;
+    z-index: 4;
 }
 
 
