@@ -131,12 +131,13 @@ h3 {
     .column1,
     .column2,
     .column2_vision,
-    .column1_vision,
-    .column_association1,
-    .column_association2 {
+    .column1_vision {
         flex: 100%;
         text-align: center;
         font-size: 30px;
+    }
+    .column2 p {
+        margin: 0;
     }
     .column1_vision,
     .column2_vision {

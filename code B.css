@@ -264,7 +264,9 @@
         .description1,
         .description2,
         .features,
-        .developer {
+        .developer,
+        .headline1,
+        .headline2 {
             flex: 100%;
         }
         .column {
