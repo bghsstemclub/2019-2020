@@ -51,6 +51,33 @@
 	border-top: solid #0caeb9 20px;
 }
 
+.calender .strikethrough {
+	text-decoration: line-through;
+}
+
 .calender {
 	text-align: center;
+}
+
+
+.image_container {
+	margin: 5%;
+	margin-top: -20px;
+	display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 15px;
+	
+}
+.flex_item {
+	min-width: 270px;
+	width: 32%;
+	height: 100%;
+	margin: 30px 5px;
+}
+
+.pictures h2 {
+	border-bottom: solid #0caeb9 10px; 
+	padding-bottom: 30px;
 }
