@@ -1,5 +1,12 @@
 /*general effect for any content being putted on the body*/
-
+@font-face {
+    font-family: Futurabook;
+    src: url("fonts/Futura Book font.ttf") format("truetype");
+}
+@font-face  {
+    font-family: Futuramed;
+    src: url("fonts/futura Heavy font.ttf");
+}
 body {
     margin: 0px;
     padding: 0px;

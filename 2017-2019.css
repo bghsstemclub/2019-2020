@@ -142,7 +142,7 @@ body {
 }
 
 .column p {
-    font-size: 2.2vmin;
+    font-size: calc(3px + 2.2vmin);
     padding: 10px;
 }
 
@@ -151,7 +151,12 @@ body {
     min-height: 350px;
 }
 
-
+.text_container {
+	position: relative
+}
+.side_text {
+	position: absolute; left: 550px; top: -600px;
+}
 /*sidebar responsiveness*/
 
 @media screen and (max-width: 768px) {
@@ -183,4 +188,9 @@ body {
     .img_text p {
         width: 98%;
     }
+	.side_text {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
 }
