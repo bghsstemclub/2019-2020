@@ -4,7 +4,12 @@ body {
     margin: 0px;
     padding: 0px;
 }
-
+h1, h2, h3, h4, h5, h6{
+	font-family: Futuramed;
+}
+p, ul{
+	font-family: Futurabook;
+}
 .crop {
     width: 100%;
     height: 400px;

@@ -37,20 +37,17 @@ body {
 
 .main h3 {
     font-size: 200%;
-    font-family: Futurabold;
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
 .main h4 {
     font-size: 150%;
-    font-family: Futuramed;
 }
 
 .main p {
     text-indent: 8%;
     font-size: 150%;
-    font-family: Futurabook;
     margin-top: 0px;
 }
 
@@ -61,7 +58,6 @@ body {
     top: 0px;
     width: 100px;
     float: right;
-
     border-radius: 15px;
     font-family: FuturaXBlk;
     line-height: 160%;
@@ -117,7 +113,6 @@ body {
 
 .achievements ul {
     font-size: 150%;
-    font-family: Futurabook;
 }
 
 .column {
