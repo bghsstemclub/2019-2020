@@ -1,7 +1,3 @@
-@font-face {
-    font-family: Futurabook;
-    src: url("fonts/Futura Book font.ttf") format("truetype");
-}
 
 @font-face {
     font-family: Futurabold;
@@ -12,7 +8,10 @@
     font-family: FuturaXBlk;
     src: url("fonts/Futura XBlk BT.ttf");
 }
-
+@font-face {
+    font-family: Futurabook;
+    src: url("fonts/Futura Book font.ttf") format("truetype");
+}
 @font-face  {
     font-family: Futuramed;
     src: url("fonts/futura Heavy font.ttf");

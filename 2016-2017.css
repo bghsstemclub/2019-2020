@@ -101,7 +101,7 @@ hr{
 h2{
     text-align: center;
     font-size: 300%;
-    font-family: Helvetica, sans-serif;
+    
     color: rgb(92, 92, 92);
     padding: 3%;
     margin: 0;
@@ -124,7 +124,6 @@ h6{
     font-size: 18px;
     padding: 0px;
     margin: 0px;
-    font-family: Geneva, sans-serif;
 
 }
 
@@ -132,7 +131,6 @@ p {
     margin-left: 8%;
     margin-right: 8%;
     font-size: 100%;
-    font-family: Helvetica, sans-serif;
     padding: 0px;
     text-align: left;
 }
@@ -141,7 +139,7 @@ ul{
     margin-left: 8%;
     margin-right: 8%;
     font-size: 100%;
-    font-family: Helvetica, sans-serif
+
 }
 
 /*hovering effect*/

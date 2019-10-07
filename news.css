@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Futurabook;
+    src: url("fonts/Futura Book font.ttf") format("truetype");
+}
+@font-face  {
+    font-family: Futuramed;
+    src: url("fonts/futura Heavy font.ttf");
+}
+
+
 /*Crops any picture under the crop class*/
 
 .crop {
@@ -103,7 +113,7 @@
     word-wrap: break-word;
 }
 
-h2,
+
 h4 {
     font-family: Georgia, 'Times New Roman', Times;
     font-weight: 100;
@@ -126,9 +136,7 @@ h4 {
     opacity: 1;
 }
 
-.column_news1 p {
-    font-family: sans-serif;
-}
+
 
 .column_news_holder,
 .column_home1,
@@ -154,7 +162,7 @@ h4 {
 }
 
 .column_home2 p {
-    font-family: Verdana, sans-serif;
+
     font-size: 17px;
 }
 
