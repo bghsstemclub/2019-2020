@@ -23,7 +23,8 @@ body {
 }
 
 .main {
-    margin: 0 80px;
+    margin: 0px;
+    margin-right: 0px;
 }
 
 .main h2 {
@@ -36,20 +37,17 @@ body {
 
 .main h3 {
     font-size: 200%;
-    font-family: Futurabold;
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
 .main h4 {
     font-size: 150%;
-    font-family: Futuramed;
 }
 
 .main p {
     text-indent: 8%;
     font-size: 150%;
-    font-family: Futurabook;
     margin-top: 0px;
 }
 
@@ -57,18 +55,18 @@ body {
     background-color: rgb(218, 228, 230);
     padding: 10px 32px;
     position: sticky;
-    top: 25px;
+    top: 0px;
     width: 100px;
     float: right;
-    margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     font-family: FuturaXBlk;
-    line-height: 25px;
+    line-height: 160%;
     text-align: center;
+	padding-bottom: 25px;
 }
 
 .text {
-    margin-right: 200px;
+    margin-right: 165px;
     background-color: white;
     padding: 50px;
 }
@@ -115,7 +113,6 @@ body {
 
 .achievements ul {
     font-size: 150%;
-    font-family: Futurabook;
 }
 
 .column {
@@ -124,7 +121,8 @@ body {
     justify-content: space-around;
     border: solid rgb(39, 146, 233) 10px;
     flex-wrap: wrap;
-    border-radius: 15px;
+   
+
 }
 
 .officer {
@@ -144,7 +142,7 @@ body {
 }
 
 .column p {
-    font-size: 2.2vmin;
+    font-size: calc(3px + 2.2vmin);
     padding: 10px;
 }
 
@@ -153,22 +151,31 @@ body {
     min-height: 350px;
 }
 
-
+.text_container {
+	position: relative
+}
+.side_text {
+	position: absolute; left: 550px; top: -600px;
+}
 /*sidebar responsiveness*/
 
 @media screen and (max-width: 768px) {
     .sidebar {
         position: sticky;
-        width: auto;
-        padding: 0 10px;
-        margin-top: 20px;
+        width: 100%;
+        
         top: 0;
         z-index: 2;
-        line-height: 12px;
+		padding-top: 0px;
+		margin:0;
+		padding: 0;
+		padding-bottom: 10px;
+		line-height: 12px;
+		border-radius: 0;
     }
     .sidebar li {
         float: left;
-        margin: 0px 10px;
+        margin: 0px 20px;
         font-size: calc(5vw - 8px);
         padding: 0;
     }
@@ -181,4 +188,9 @@ body {
     .img_text p {
         width: 98%;
     }
+	.side_text {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
 }
