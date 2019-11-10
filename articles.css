@@ -1,32 +1,56 @@
+@font-face {
+    font-family: Futurabook;
+    src: url("fonts/Futura Book font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Futurabold;
+    src: url("fonts/Futura Extra Black font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: FuturaXBlk;
+    src: url("fonts/Futura XBlk BT.ttf");
+}
+
+@font-face {
+    font-family: Futuramed;
+    src: url("fonts/futura Heavy font.ttf");
+}
+
 body {
     background: rgb(37, 128, 151);
 }
 
+
 /*content box in the middle*/
+
 .content {
     max-width: 70%;
     margin: auto;
     background: white;
     padding: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-h1{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-align: center;
+    font-family: Futuramed;
 }
+
 
 /*changes in the column*/
-.column_news1{
+
+.column_news1 {
     font-size: 130%;
 }
 
-.column_news1 p{
+.column_news1 p {
     font-size: 85%;
+    font-family: futurabook;
 }
-
-
-
-
-
-
-
