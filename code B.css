@@ -43,7 +43,7 @@
     }
     
     .main h3 {
-        font-size: 150%;
+        font-size: 200%;
     }
     /*Row and Column Section*/
     
@@ -117,7 +117,7 @@
         font-size: 150%;
         margin: 0;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 400;
+        font-weight: 500;
     }
     
     .headline1 p {

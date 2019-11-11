@@ -2,9 +2,26 @@
     font-family: Futurabook;
     src: url("fonts/Futura Book font.ttf") format("truetype");
 }
-@font-face  {
+
+@font-face {
     font-family: Futuramed;
-    src: url("fonts/futura Heavy font.ttf");
+    src: url("fonts/futura Heavy font.ttf") format("truetype");
+}
+
+
+/*font final edits*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Futuramed;
+}
+
+p {
+    font-family: Futurabook;
 }
 
 
@@ -63,7 +80,7 @@
     position: absolute;
     bottom: 0;
     background: rgb(51, 179, 151);
-    background: rgba(51, 179, 151, 0.5);
+    background: rgba(51, 179, 151, 0.61);
     color: rgb(255, 255, 255);
     width: 100%;
     opacity: 1;
@@ -71,6 +88,7 @@
     font-size: 25px;
     padding: 15px;
     text-align: center;
+    font-family: futurabook;
 }
 
 
@@ -83,11 +101,16 @@
     color: black;
 }
 
+.home_container .row {
+    margin-top: none;
+}
+
 .title {
     text-align: center;
     font-size: 300%;
-    font-weight: 100;
+    font-weight: normal;
     text-decoration: overline;
+    margin-bottom: none;
 }
 
 
@@ -113,10 +136,13 @@
     word-wrap: break-word;
 }
 
+.column_calendars hr {
+    width: 100%;
+    border-color: rgba(207, 207, 207, 0.219);
+}
 
 h4 {
-    font-family: Georgia, 'Times New Roman', Times;
-    font-weight: 100;
+    font-weight: normal;
 }
 
 .column_news_holder {
@@ -127,7 +153,7 @@ h4 {
 
 .column_news_holder h1,
 .column_calendars h1 {
-    font-weight: 150;
+    font-weight: normal;
 }
 
 .column_home1,
@@ -135,8 +161,6 @@ h4 {
     width: 45%;
     opacity: 1;
 }
-
-
 
 .column_news_holder,
 .column_home1,
@@ -162,7 +186,6 @@ h4 {
 }
 
 .column_home2 p {
-
     font-size: 17px;
 }
 
@@ -184,6 +207,15 @@ h4 {
     font-size: 90%;
     border-radius: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.column_calendars .button_news {
+    padding: 2px 4px;
+}
+
+.column_calendars .button_news:hover {
+    color: rgb(179, 179, 179);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 * {
