@@ -25,18 +25,19 @@
 .icebreakers h2 {
     font-size: 300%;
     text-align: center;
-    font-family: Futuramed;
+    font-family: Futurabook;
+    font-weight: 900;
 }
 
 .icebreakers h3 {
     font-size: 200%;
     text-align: center;
-    font-family: Futuramed;
+    font-family: Futurabook;
 }
 
 .icebreakers h4 {
     font-size: 150%;
-    font-family: Futuramed;
+    font-family: Futurabook;
 }
 
 .icebreakers p {
