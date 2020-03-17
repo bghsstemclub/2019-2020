@@ -11,7 +11,7 @@
 .header-right {
     float: right;
     position: absolute;
-	top: 5%;
+	top: 2.4%;
     right: 16px;
 	
 }
@@ -276,12 +276,12 @@ a.active {
 
 .center {
     position: absolute;
-    top: 4%;
+    top: 2.2%;
     left: 3.2%;
     font-size: 100px;
     font-family: monospace;
     filter: brightness(140%);
-    width: 15%;
+    width: 12%;
 }
 
 /*style for diagnol striped background*/
@@ -294,7 +294,7 @@ a.active {
 	#086bc8 5px
 	);
 	width: 100%;
-	height: 20%;
+	height: 15%;
 	position: absolute;
 	top: 0;
 	left: 0;
