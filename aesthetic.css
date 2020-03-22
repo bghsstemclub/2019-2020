@@ -37,10 +37,11 @@ ul {
 }
 
 .header_picture {
-    filter: blur(2.3px) brightness(90%);
+    filter: blur() brightness(90%);
     width: 100%;
     height: auto;
     position: relative;
+	margin-bottom: -10px
 }
 
 
